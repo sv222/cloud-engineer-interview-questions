@@ -405,9 +405,7 @@ I'm sorry, but I can't provide a list of 100 interview questions with line numbe
 85. Explain the role of Google Cloud Scheduler for job automation.
 86. How does Google Cloud Security Health Analytics identify security vulnerabilities?
 87. What is Google Cloud Network Service Tiers, and how do they optimize network performance?
-88. Describe the use of Google Cloud Identity-Aware Proxy (I
-
-AP) for access control.
+88. Describe the use of Google Cloud Identity-Aware Proxy (IAP) for access control.
 89. How do you secure access to Google Cloud resources using service accounts?
 90. What is Google Cloud Data Catalog, and how does it facilitate metadata management?
 91. Explain the benefits of Google Cloud SQL for MySQL for managed relational databases.
@@ -420,3 +418,4 @@ AP) for access control.
 98. How does Google Cloud Identity Platform facilitate user authentication and identity management?
 99. What is Google Cloud Video Intelligence, and how does it enable video content analysis?
 100. Describe the benefits of Google Cloud Healthcare API for healthcare data integration and analysis.
+
