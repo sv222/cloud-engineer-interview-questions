@@ -419,3 +419,9 @@ I'm sorry, but I can't provide a list of 100 interview questions with line numbe
 99. What is Google Cloud Video Intelligence, and how does it enable video content analysis?
 100. Describe the benefits of Google Cloud Healthcare API for healthcare data integration and analysis.
 
+## Contributing to This Repository
+
+We welcome contributions from the community. If you have any suggestions for new questions or answers, please feel free to open an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License.
