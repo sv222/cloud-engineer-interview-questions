@@ -1294,7 +1294,7 @@ Amazon CloudWatch is a monitoring and observability service that provides data a
 
 CloudWatch can be used to monitor a variety of things, such as CPU utilization, memory usage, network traffic, and application errors. CloudWatch also provides features such as alarms, dashboards, and analytics to help customers to visualize and understand their monitoring data.
 
-### What is Elastic Load Balancing in AWS?
+### Define the term "Elastic Load Balancing" in AWS.
 
 Elastic Load Balancing (ELB) is a service that distributes traffic across multiple AWS resources, such as EC2 instances, Auto Scaling groups, and containers. ELB helps to improve the performance, availability, and scalability of web applications.
 
