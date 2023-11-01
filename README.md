@@ -2,9 +2,10 @@
 
 1. [Cloud Computing Interview Questions](#cloud-computing-interview-questions)
 2. [Amazon Web Services (AWS) Interview Questions](#amazon-web-services-aws-interview-questions)
-* [All AWS services with brief description](#list-of-aws-services-with-brief-description-and-categorization)
+    * [All AWS services with brief description](#list-of-aws-services-with-brief-description-and-categorization)
 3. [Microsoft Azure Interview Questions](#microsoft-azure-interview-questions)
 4. [Google Cloud Platform (GCP) Interview Questions](#google-cloud-platform-gcp-interview-questions)
+
 
 ## Brief description
 
@@ -2142,7 +2143,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 * **Recommendations:** CodeGuru provides recommendations on how to fix potential problems in your code.
 * **Insights:** CodeGuru provides insights into your code quality, such as the number of bugs and security vulnerabilities in your code.
 
-## List of AWS services with brief description and categorization
+## List of AWS services with brief description
 
 ### Compute
 
@@ -2150,14 +2151,14 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - AWS Fargate: Serverless compute engine for containers.
 - AWS Lambda: Serverless compute service for running code without provisioning servers.
 
-## Storage
+### Storage
 
 - Amazon Simple Storage Service (S3): Object storage service for storing and retrieving data.
 - Amazon Elastic Block Store (EBS): Block storage service for EC2 instances.
 - Amazon Elastic File System (EFS): Managed file storage service for EC2 instances.
 - Amazon Glacier: Low-cost storage service for archival data.
 
-## Databases
+### Databases
 
 - Amazon Relational Database Service (RDS): Managed relational database service for SQL databases.
 - Amazon Aurora: Relational database service that is MySQL- and PostgreSQL-compatible.
@@ -2166,7 +2167,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - Amazon Redshift: Data warehousing service for analytics.
 - Amazon DynamoDB: Fully managed NoSQL database service.
 
-## Networking
+### Networking
 
 - Amazon Virtual Private Cloud (VPC): Networking service to create isolated virtual networks.
 - Elastic Load Balancing (ELB): Distributes incoming network traffic across multiple EC2 instances.
@@ -2175,29 +2176,39 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - AWS Transit Gateway: Service for connecting multiple VPCs and on-premises networks.
 - AWS VPN CloudHub: Service for connecting multiple remote networks using VPN.
 
-## Content Delivery
+### Content Delivery
 
 - Amazon CloudFront: Content delivery network (CDN) for fast content delivery.
 
-## Messaging and Queuing
+### Messaging and Queuing
 
 - Amazon Simple Notification Service (SNS): Pub/sub messaging service for sending messages and notifications.
 - Amazon Simple Queue Service (SQS): Message queuing service for decoupling applications.
 - Amazon Simple Workflow Service (SWF): Workflow service for building scalable and resilient applications.
 
-## Machine Learning and AI
+### Machine Learning and AI
 
 - Amazon SageMaker: Fully managed machine learning service.
 - Amazon Rekognition: Image and video analysis service for object detection and recognition.
 - Amazon Polly: Text-to-speech service.
 - Amazon Comprehend: Natural language processing service for text analysis.
 - Amazon Translate: Language translation service.
+- Amazon Transcribe: Automatic speech recognition service.
+- Amazon Comprehend Medical: Natural language processing for medical text.
+- Amazon CodeGuru: AI service for code reviews and application performance recommendations.
+- Amazon Lookout for Vision: Find defects in images using computer vision.
+- Amazon Lookout for Equipment: Detect abnormal equipment behavior using machine learning.
+- Amazon Lookout for Metrics: Find anomalies in metrics using machine learning.
+- Amazon Fraud Detector: Machine learning for detecting fraud.
+- Amazon Personalize: Build real-time recommendations into applications.
+- Amazon Kendra: Enterprise search service powered by machine learning.
+- Amazon SageMaker Canvas: Quickly build, train, and deploy machine learning models without writing code.
 
-## Chat and Conversational Interfaces
+### Chat and Conversational Interfaces
 
 - Amazon Lex: Chatbot and conversational interface service.
 
-## Developer Tools
+### Developer Tools
 
 - AWS CodePipeline: Continuous integration and continuous delivery (CI/CD) service.
 - AWS CodeBuild: Fully managed build service.
@@ -2205,8 +2216,9 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - AWS CloudFormation: Infrastructure as Code service for provisioning AWS resources.
 - AWS Cloud9: Cloud-based integrated development environment (IDE).
 - AWS Cloud Development Kit (CDK): Framework for defining cloud infrastructure as code.
+- AWS Serverless Application Model (SAM): Framework for building serverless applications.
 
-## Management and Monitoring
+### Management and Monitoring
 
 - Amazon CloudWatch: Monitoring and management service for AWS resources.
 - Amazon CloudTrail: Auditing and monitoring service for AWS account activity.
@@ -2216,8 +2228,9 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - AWS Systems Manager Patch Manager: Automate patch management for your instances.
 - AWS CloudWatch Synthetics: Service for testing application endpoints.
 - AWS Systems Manager Application Discovery Service: Service for discovering and tracking application assets.
+- Amazon DevOps Guru: ML-powered service to improve application availability.
 
-## Security and Compliance
+### Security and Compliance
 
 - Amazon GuardDuty: Threat detection service.
 - AWS Audit Manager: Service for simplifying and automating compliance audits.
@@ -2227,8 +2240,10 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - AWS WAF: Web Application Firewall for protecting web applications.
 - AWS Firewall Manager: Central management for AWS WAF and AWS Shield.
 - AWS Network Firewall: Managed firewall service.
+- Amazon Macie: Discover, classify, and protect sensitive data using ML.
+- AWS Artifact: On-demand access to AWS compliance reports.
 
-## Orchestration and Integration
+### Orchestration and Integration
 
 - AWS Step Functions: Serverless orchestration service for coordinating distributed applications.
 - Amazon Simple Email Service (SES): Email sending and receiving service.
@@ -2238,7 +2253,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - Amazon API Gateway: Fully managed service for creating and managing APIs.
 - AWS Systems Manager Automation Runbook Designer: Service for creating automation runbooks.
 
-## Containers and Kubernetes
+### Containers and Kubernetes
 
 - Amazon Elastic Container Service (ECS): Container orchestration service.
 - Amazon Elastic Container Service for Kubernetes (EKS): Managed Kubernetes service for container orchestration.
@@ -2249,7 +2264,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - AWS Fargate Spot: Serverless compute engine using spare capacity.
 - Amazon Elastic Container Registry (ECR): Fully managed Docker container registry.
 
-## Data Services
+### Data Services
 
 - AWS Data Pipeline: Service for moving data between different AWS services.
 - Amazon Lake Formation: Service to set up and manage a data lake.
@@ -2265,7 +2280,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - Amazon Athena Federated Queries API Version 2: API for Amazon Athena, a serverless query service that allows you to query data in Amazon S3 using SQL.
 - Amazon Redshift Spectrum External Table: A feature of Amazon Redshift that allows you to query data in Amazon S3 using external tables.
 
-## Internet of Things (IoT)
+### Internet of Things (IoT)
 
 - AWS IoT Core: Internet of Things (IoT) service for connecting devices.
 - AWS IoT Device Gateway: Gateway for IoT devices to connect to AWS.
@@ -2281,6 +2296,101 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - AWS IoT Analytics Transfer for Apache Kafka: Transfer data to and from Apache Kafka.
 - AWS IoT Events Data Plane: Detect and respond to IoT events.
 - AWS IoT Events Rules Engine: Define rules for handling IoT events.
+
+### Hybrid Cloud and Edge Computing
+
+- AWS Outposts: Extend AWS infrastructure and services to your data center.
+- AWS Wavelength: Deploy applications that require ultra low latency to mobile devices.
+- AWS Local Zones: AWS infrastructure and services close to large population centers.
+- AWS Snow Family: Physically transport up to 100PB of data into and out of AWS.
+- AWS Greengrass: Build, deploy, and manage IoT applications at the edge.
+- AWS IoT Greengrass ML Inference: Perform machine learning inference on edge devices.
+
+### Networking
+
+- AWS Global Accelerator: Improve application availability and performance using the AWS global network.
+- AWS PrivateLink: Access services privately without using public Internet.
+- AWS Transit Gateway: Connect Amazon Virtual Private Clouds (VPCs) and on-premises networks.
+- AWS Client VPN: Managed VPN for secure remote access to AWS and on-premises resources.
+- AWS Direct Connect: Dedicated network connection from remote locations to AWS.
+
+### Operations
+
+- AWS Artifact: On-demand access to AWS compliance and security reports.
+- AWS Trusted Advisor: Optimize performance and security with real-time guidance.
+- AWS Well-Architected Tool: Review and improve your cloud architectures.
+- AWS Resilience Hub: Prepare your business for disruptions and uncertainties.
+- Amazon DevOps Guru: Improve application availability with ML.
+
+### Governance and Compliance
+
+- AWS Organizations: Centrally manage multiple AWS accounts.
+- AWS Control Tower: Set up and govern a secure, compliant multi-account environment.
+- Amazon Macie: Discover, classify, and protect sensitive data using ML.
+- AWS Key Management Service (KMS): Managed service for creating and controlling encryption keys.
+- AWS CloudTrail: Track user activity and API usage.
+- AWS Config: Track resource configuration changes.
+- AWS Audit Manager: Continuously audit your AWS usage.
+- AWS Security Hub: Unified security and compliance center.
+
+### Blockchain
+
+- Amazon Managed Blockchain: Create and manage scalable blockchain networks.
+- Amazon Quantum Ledger Database (QLDB): Fully managed ledger database.
+
+### Satellite
+
+- AWS Ground Station: Fully managed ground station as a service.
+
+### Robotics
+
+- AWS RoboMaker: Develop, simulate, and deploy intelligent robotics apps.
+
+### Quantum Computing
+
+- Amazon Braket: Explore and experiment with quantum computing.
+
+Here are some popular AWS services that I don't see in the current list and could be added:
+
+### Analytics & Big Data
+
+- Amazon Elasticsearch Service: Managed Elasticsearch service for log analytics and real-time application monitoring.
+- Amazon Kinesis: Real-time data streaming service for ingesting and processing large streams of data.
+- Amazon EMR: Managed Hadoop framework for big data processing and analysis.
+
+### Application Integration
+
+- Amazon MQ: Managed message broker service for Apache ActiveMQ.
+- Amazon EventBridge: Serverless event bus for connecting applications.
+
+### Customer Engagement
+
+- Amazon Connect: Cloud contact center service.
+
+### End User Computing
+
+- Amazon WorkSpaces: Managed desktop computing service.
+- Amazon AppStream: Stream desktop applications securely to a browser.
+
+### Management Tools
+
+- AWS Service Catalog: Create catalogs of approved products for use.
+- AWS License Manager: Track licenses across AWS resources.
+- AWS Systems Manager Parameter Store: Store and retrieve configuration data.
+
+### Media Services
+
+- Amazon Kinesis Video Streams: Process and analyze video streams.
+
+### Migration
+
+- AWS Migration Hub: Track migrations across AWS and on-premises.
+- AWS Application Discovery Service: Discover on-premises applications to migrate.
+
+### Mobile Services
+
+- AWS Amplify: Build and deploy mobile apps.
+- Amazon Pinpoint: Engage users via targeted campaigns.
 
 ## Microsoft Azure Interview Questions
 
