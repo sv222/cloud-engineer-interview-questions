@@ -2,7 +2,7 @@
 
 1. [Cloud Computing Interview Questions](#cloud-computing-interview-questions)
 2. [Amazon Web Services (AWS) Interview Questions](#amazon-web-services-aws-interview-questions)
-    * [All AWS services with brief description](#list-of-aws-services-with-brief-description-and-categorization)
+    * [All AWS services with brief description](#list-of-aws-services-with-brief-description)
 3. [Microsoft Azure Interview Questions](#microsoft-azure-interview-questions)
 4. [Google Cloud Platform (GCP) Interview Questions](#google-cloud-platform-gcp-interview-questions)
 
@@ -1710,10 +1710,6 @@ AWS CodeDeploy is a managed deployment service that makes it easy to deploy your
 * **Integrations:** CodeDeploy integrates with a variety of AWS services, such as CodeCommit and CodeBuild.
 
 Together, CodeCommit, CodeBuild, and CodeDeploy form a powerful continuous integration and continuous delivery (CI/CD) pipeline.
-
-[Image of AWS CodeCommit]
-[Image of AWS CodeBuild]
-[Image of AWS CodeDeploy]
 
 ### How do you implement disaster recovery in AWS?
 
