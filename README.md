@@ -2162,6 +2162,8 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **Amazon Timestream:** Fully managed, serverless time-series database.
 - **Amazon Redshift:** Data warehousing service for analytics.
 - **Amazon DynamoDB:** Fully managed NoSQL database service.
+- **Amazon DocumentDB:** Fully managed, scalable, highly available, and durable document database that is fully compatible with MongoDB.
+- **Amazon Database Migration Service (DMS):** A service that helps you migrate databases from on-premises to AWS or from one AWS database service to another.
 
 ### Networking
 
