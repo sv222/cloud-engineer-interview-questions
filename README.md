@@ -2168,21 +2168,28 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 ### Networking
 
 - **Amazon Virtual Private Cloud (VPC):** Networking service to create isolated virtual networks.
+- **AWS VPC peering:** A networking connection between two VPCs that enables you to route traffic between them privately.
 - **Elastic Load Balancing (ELB):** Distributes incoming network traffic across multiple EC2 instances.
 - **Amazon Route 53:** Scalable and highly available Domain Name System (DNS) web service.
 - **AWS Direct Connect:** Dedicated network connection to AWS.
 - **AWS Transit Gateway:** Service for connecting multiple VPCs and on-premises networks.
 - **AWS VPN CloudHub:** Service for connecting multiple remote networks using VPN.
+- **AWS Transit Gateway Peering:** A service that allows you to connect two or more AWS Transit Gateways together.
+- **AWS Transit Gateway Network Manager:** A service that provides a unified view of your AWS Transit Gateway networks and helps you manage them centrally.
+-
 
 ### Content Delivery
 
 - **Amazon CloudFront:** Content delivery network (CDN) for fast content delivery.
+- **Amazon CloudFront Streaming:** A service that delivers live and on-demand video to viewers around the world.
 
 ### Messaging and Queuing
 
 - **Amazon Simple Notification Service (SNS):** Pub/sub messaging service for sending messages and notifications.
 - **Amazon Simple Queue Service (SQS):** Message queuing service for decoupling applications.
 - **Amazon Simple Workflow Service (SWF):** Workflow service for building scalable and resilient applications.
+- **Amazon MQ:** Managed message broker service, supports Apache ActiveMQ and RabbitMQ.
+- **Amazon Managed Streaming for Apache Kafka (MSK):** A fully managed service that makes it easy to run, manage, and scale Apache Kafka clusters on AWS.
 
 ### Machine Learning and AI
 
@@ -2217,6 +2224,9 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **AWS Cloud Development Kit (CDK):** Framework for defining cloud infrastructure as code.
 - **AWS Serverless Application Model (SAM):** Framework for building serverless applications.
 - **AWS SDK:** Collection of developer tools and libraries that make it easy to build applications on AWS.
+- **AWS Amplify:** A collection of tools and services that makes it easy to develop mobile and web applications.
+- **AWS Lightsail:** A virtual private server (VPS) service that provides developers with a simple and affordable way to launch and manage virtual servers in the cloud.
+- **AWS AppSync:** A fully managed service that makes it easy to build serverless, real-time applications (GraphQL API).
 
 ### Management and Monitoring
 
@@ -2245,6 +2255,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 
 ### Orchestration and Integration
 
+- **Amazon EventBridge:** Serverless event bus for connecting applications.
 - **AWS Step Functions:** Serverless orchestration service for coordinating distributed applications.
 - **Amazon Simple Email Service (SES):** Email sending and receiving service.
 - **Amazon Simple Queue Service (SQS):** Message queuing service for decoupling applications.
@@ -2354,12 +2365,9 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 
 - **Amazon Elasticsearch Service:** Managed Elasticsearch service for log analytics and real-time application monitoring.
 - **Amazon Kinesis:** Real-time data streaming service for ingesting and processing large streams of data.
+- **Amazon Kinesis Streams:** A real-time data streaming service that can process millions of records per second.
+- **Amazon Kinesis Firehose:** A fully managed service that delivers real-time streaming data to Amazon S3, Amazon Redshift, Amazon Elasticsearch Service, or Splunk.
 - **Amazon EMR:** Managed Hadoop framework for big data processing and analysis.
-
-### Application Integration
-
-- **Amazon MQ:** Managed message broker service for Apache ActiveMQ.
-- **Amazon EventBridge:** Serverless event bus for connecting applications.
 
 ### Customer Engagement
 
