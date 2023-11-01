@@ -2163,7 +2163,6 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **Amazon Redshift:** Data warehousing service for analytics.
 - **Amazon DynamoDB:** Fully managed NoSQL database service.
 - **Amazon DocumentDB:** Fully managed, scalable, highly available, and durable document database that is fully compatible with MongoDB.
-- **Amazon Database Migration Service (DMS):** A service that helps you migrate databases from on-premises to AWS or from one AWS database service to another.
 
 ### Networking
 
@@ -2171,21 +2170,27 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **AWS VPC peering:** A networking connection between two VPCs that enables you to route traffic between them privately.
 - **Elastic Load Balancing (ELB):** Distributes incoming network traffic across multiple EC2 instances.
 - **Amazon Route 53:** Scalable and highly available Domain Name System (DNS) web service.
-- **AWS Direct Connect:** Dedicated network connection to AWS.
+- **AWS Direct Connect:** A dedicated network connection from your on-premises data center to AWS.
 - **AWS Transit Gateway:** Service for connecting multiple VPCs and on-premises networks.
 - **AWS VPN CloudHub:** Service for connecting multiple remote networks using VPN.
 - **AWS Transit Gateway Peering:** A service that allows you to connect two or more AWS Transit Gateways together.
 - **AWS Transit Gateway Network Manager:** A service that provides a unified view of your AWS Transit Gateway networks and helps you manage them centrally.
--
+- **AWS Global Accelerator:** Improve application availability and performance using the AWS global network.
+- **AWS PrivateLink:** Access services privately without using public Internet.
+- **AWS Client VPN:** Managed VPN for secure remote access to AWS and on-premises resources.
 
 ### Content Delivery
 
 - **Amazon CloudFront:** Content delivery network (CDN) for fast content delivery.
 - **Amazon CloudFront Streaming:** A service that delivers live and on-demand video to viewers around the world.
 
-### Messaging and Queuing
+### Messaging
 
 - **Amazon Simple Notification Service (SNS):** Pub/sub messaging service for sending messages and notifications.
+- **Amazon Pinpoint:** A multichannel messaging service that makes it easy to engage with your customers across a variety of channels, including SMS, email, push notifications, and in-app messages.
+
+### Queuing
+
 - **Amazon Simple Queue Service (SQS):** Message queuing service for decoupling applications.
 - **Amazon Simple Workflow Service (SWF):** Workflow service for building scalable and resilient applications.
 - **Amazon MQ:** Managed message broker service, supports Apache ActiveMQ and RabbitMQ.
@@ -2233,11 +2238,13 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **Amazon CloudWatch:** Monitoring and management service for AWS resources.
 - **Amazon CloudTrail:** Auditing and monitoring service for AWS account activity.
 - **AWS Systems Manager:** Unified interface for managing AWS resources.
+- **AWS OpsWorks:** A service that makes it easy to deploy, manage, and scale server-based applications, supports Puppet and Chef.
 - **AWS Config:** Configuration management service for assessing, auditing, and evaluating resources.
 - **AWS Systems Manager Automation:** Service for automating operational tasks.
 - **AWS Systems Manager Patch Manager:** Automate patch management for your instances.
 - **AWS CloudWatch Synthetics:** Service for testing application endpoints.
 - **AWS Systems Manager Application Discovery Service:** Service for discovering and tracking application assets.
+- **AWS Systems Manager Automation Runbook Designer:** Service for creating automation runbooks.
 - **Amazon DevOps Guru:** ML-powered service to improve application availability.
 
 ### Security and Compliance
@@ -2262,7 +2269,6 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **Amazon Simple Workflow Service (SWF):** Workflow service for building scalable and resilient applications.
 - **Amazon CloudFormation:** Infrastructure as Code service for provisioning AWS resources.
 - **Amazon API Gateway:** Fully managed service for creating and managing APIs.
-- **AWS Systems Manager Automation Runbook Designer:** Service for creating automation runbooks.
 
 ### Containers and Kubernetes
 
@@ -2316,14 +2322,6 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **AWS Snow Family:** Physically transport up to 100PB of data into and out of AWS.
 - **AWS Greengrass:** Build, deploy, and manage IoT applications at the edge.
 - **AWS IoT Greengrass ML Inference:** Perform machine learning inference on edge devices.
-
-### Networking
-
-- **AWS Global Accelerator:** Improve application availability and performance using the AWS global network.
-- **AWS PrivateLink:** Access services privately without using public Internet.
-- **AWS Transit Gateway:** Connect Amazon Virtual Private Clouds (VPCs) and on-premises networks.
-- **AWS Client VPN:** Managed VPN for secure remote access to AWS and on-premises resources.
-- **AWS Direct Connect:** Dedicated network connection from remote locations to AWS.
 
 ### Operations
 
@@ -2392,11 +2390,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 
 - **AWS Migration Hub:** Track migrations across AWS and on-premises.
 - **AWS Application Discovery Service:** Discover on-premises applications to migrate.
-
-### Mobile Services
-
-- **AWS Amplify:** Build and deploy mobile apps.
-- **Amazon Pinpoint:** Engage users via targeted campaigns.
+- **Amazon Database Migration Service (DMS):** A service that helps you migrate databases from on-premises to AWS or from one AWS database service to another.
 
 ## Microsoft Azure Interview Questions
 
