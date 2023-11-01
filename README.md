@@ -2,12 +2,12 @@
 
 1. [Cloud Computing Interview Questions](#cloud-computing-interview-questions)
 2. [Amazon Web Services (AWS) Interview Questions](#amazon-web-services-aws-interview-questions)
+2.1. [All AWS services with brief description](#list-of-aws-services-with-brief-description-and-categorization)
 3. [Microsoft Azure Interview Questions](#microsoft-azure-interview-questions)
 4. [Google Cloud Platform (GCP) Interview Questions](#google-cloud-platform-gcp-interview-questions)
 
+## Brief description
 
-
-## Summary
 This GitHub repository is a meticulously curated and constantly evolving collection of interview questions for cloud engineers, specifically tailored for various cloud platforms, including AWS, Azure, and Google Cloud. We've organized these questions to help both interviewees and interviewers prepare for technical discussions and assessments in the cloud computing domain.
 
 The primary goal of this repository is to provide an extensive resource that encompasses a wide range of topics relevant to cloud engineering. The questions are categorized by cloud provider to facilitate targeted preparation. Whether you're aiming for a career in AWS, Azure, Google Cloud, or other cloud platforms, this repository has you covered.
@@ -2141,6 +2141,205 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 * **Code reviews:** CodeGuru automatically reviews your code and identifies potential problems.
 * **Recommendations:** CodeGuru provides recommendations on how to fix potential problems in your code.
 * **Insights:** CodeGuru provides insights into your code quality, such as the number of bugs and security vulnerabilities in your code.
+
+## List of AWS services with brief description and categorization
+
+### Compute
+- Amazon Elastic Compute Cloud (EC2): Scalable virtual servers for running applications.
+- AWS Fargate: Serverless compute engine for containers.
+- AWS Lambda: Serverless compute service for running code without provisioning servers.
+
+## Storage
+- Amazon Simple Storage Service (S3): Object storage service for storing and retrieving data.
+- Amazon Elastic Block Store (EBS): Block storage service for EC2 instances.
+- Amazon Elastic File System (EFS): Managed file storage service for EC2 instances.
+- Amazon Glacier: Low-cost storage service for archival data.
+
+## Databases
+- Amazon Relational Database Service (RDS): Managed relational database service for SQL databases.
+- Amazon Aurora: Relational database service that is MySQL- and PostgreSQL-compatible.
+- Amazon Neptune: Managed graph database service.
+- Amazon Timestream: Fully managed, serverless time-series database.
+- Amazon Redshift: Data warehousing service for analytics.
+- Amazon DynamoDB: Fully managed NoSQL database service.
+
+## Networking
+- Amazon Virtual Private Cloud (VPC): Networking service to create isolated virtual networks.
+- Elastic Load Balancing (ELB): Distributes incoming network traffic across multiple EC2 instances.
+- Amazon Route 53: Scalable and highly available Domain Name System (DNS) web service.
+- AWS Direct Connect: Dedicated network connection to AWS.
+- AWS Transit Gateway: Service for connecting multiple VPCs and on-premises networks.
+- AWS VPN CloudHub: Service for connecting multiple remote networks using VPN.
+
+## Content Delivery
+- Amazon CloudFront: Content delivery network (CDN) for fast content delivery.
+
+## Messaging and Queuing
+- Amazon Simple Notification Service (SNS): Pub/sub messaging service for sending messages and notifications.
+- Amazon Simple Queue Service (SQS): Message queuing service for decoupling applications.
+- Amazon Simple Workflow Service (SWF): Workflow service for building scalable and resilient applications.
+
+## Machine Learning and AI
+- Amazon SageMaker: Fully managed machine learning service.
+- Amazon Rekognition: Image and video analysis service for object detection and recognition.
+- Amazon Polly: Text-to-speech service.
+- Amazon Comprehend: Natural language processing service for text analysis.
+- Amazon Translate: Language translation service.
+
+## Chat and Conversational Interfaces
+- Amazon Lex: Chatbot and conversational interface service.
+
+## Developer Tools
+- AWS CodePipeline: Continuous integration and continuous delivery (CI/CD) service.
+- AWS CodeBuild: Fully managed build service.
+- AWS CodeDeploy: Deployment service for applications to Amazon EC2 instances.
+- AWS CloudFormation: Infrastructure as Code service for provisioning AWS resources.
+- AWS Cloud9: Cloud-based integrated development environment (IDE).
+- AWS Cloud Development Kit (CDK): Framework for defining cloud infrastructure as code.
+
+## Management and Monitoring
+- Amazon CloudWatch: Monitoring and management service for AWS resources.
+- Amazon CloudTrail: Auditing and monitoring service for AWS account activity.
+- AWS Systems Manager: Unified interface for managing AWS resources.
+- AWS Config: Configuration management service for assessing, auditing, and evaluating resources.
+- AWS Systems Manager Automation: Service for automating operational tasks.
+- AWS Systems Manager Patch Manager: Automate patch management for your instances.
+- AWS CloudWatch Synthetics: Service for testing application endpoints.
+- AWS Systems Manager Application Discovery Service: Service for discovering and tracking application assets.
+
+## Security and Compliance
+- Amazon GuardDuty: Threat detection service.
+- AWS Audit Manager: Service for simplifying and automating compliance audits.
+- AWS Compliance Manager: Service for managing compliance programs.
+- AWS Security Hub: Service for security and compliance.
+- AWS Shield: Managed Distributed Denial of Service (DDoS) protection.
+- AWS WAF: Web Application Firewall for protecting web applications.
+- AWS Firewall Manager: Central management for AWS WAF and AWS Shield.
+- AWS Network Firewall: Managed firewall service.
+
+## Orchestration and Integration
+- AWS Step Functions: Serverless orchestration service for coordinating distributed applications.
+- Amazon Simple Email Service (SES): Email sending and receiving service.
+- Amazon Simple Queue Service (SQS): Message queuing service for decoupling applications.
+- Amazon Simple Workflow Service (SWF): Workflow service for building scalable and resilient applications.
+- Amazon CloudFormation: Infrastructure as Code service for provisioning AWS resources.
+- Amazon API Gateway: Fully managed service for creating and managing APIs.
+- AWS Systems Manager Automation Runbook Designer: Service for creating automation runbooks.
+
+## Containers and Kubernetes
+- Amazon Elastic Container Service (ECS): Container orchestration service.
+- Amazon Elastic Container Service for Kubernetes (EKS): Managed Kubernetes service for container orchestration.
+- Amazon Elastic Kubernetes Service Anywhere (EKS Anywhere): Run containers on your own infrastructure.
+- Amazon Elastic Container Service for Kubernetes Fargate (EKS-Fargate): Serverless Kubernetes service.
+- AWS App Runner: Service for building and running containerized applications.
+- AWS App Mesh: Service mesh for microservices.
+- AWS Fargate Spot: Serverless compute engine using spare capacity.
+- Amazon Elastic Container Registry (ECR): Fully managed Docker container registry.
+- Amazon Elastic Container Registry Public (ECR Public): Public container image registry.
+
+## Data Services
+- AWS Data Pipeline: Service for moving data between different AWS services.
+- Amazon Lake Formation: Service to set up and manage a data lake.
+- AWS Lake Formation Permissions: Manage permissions in AWS Lake Formation.
+- AWS Lake Formation Governed Tables: Tables in AWS Lake Formation.
+- AWS Lake Formation Analytics: Analyze data in AWS Lake Formation.
+- AWS Glue: ETL (Extract, Transform, Load) service for data preparation.
+- AWS Glue Data Catalog: Managed metadata repository.
+- AWS Glue Data Catalog Serverless: Serverless data catalog service.
+- AWS Glue Workflows: Service for building ETL workflows.
+- AWS Glue Studio: Visual interface for building ETL jobs.
+- Amazon Athena: Interactive query service for data analysis.
+- Amazon Athena Federated Queries API Version 2: API for Amazon Athena, a serverless query service that allows you to query data in Amazon S3 using SQL.
+- Amazon Redshift Spectrum External Table: A feature of Amazon Redshift that allows you to query data in Amazon S3 using external tables.
+
+## Internet of Things (IoT)
+- AWS IoT Core: Internet of Things (IoT) service for connecting devices.
+- AWS IoT Device Gateway: Gateway for IoT devices to connect to AWS.
+- AWS IoT Analytics: Service for processing, storing, and analyzing IoT data.
+- AWS IoT Greengrass: Edge computing service for IoT devices.
+- AWS IoT FleetWise: Fleet management for IoT devices.
+- Amazon Location Service: Geospatial service for map data.
+- Amazon SageMaker Canvas: Service for building, training, and deploying models.
+- Amazon SageMaker Ground Truth: Data labeling service for machine learning.
+- Amazon SageMaker Neo: Service for optimizing machine learning models for deployment.
+- Amazon SageMaker Autopilot: Service for automating the machine learning model-building process.
+- Amazon Personalize: Service for creating real-time personalization.
+- Amazon Forecast: Service for time series forecasting.
+- Amazon Comprehend Medical: Service for medical language processing.
+- Amazon Comprehend Custom Entities: Create custom entities for Amazon Comprehend.
+- Amazon Comprehend Custom Classifier: Create custom text classification models.
+- Amazon Lex: Service for building conversational interfaces.
+- Amazon Lex Custom Slot Types: Create custom slot types for Amazon Lex.
+- Amazon Lex Custom Intents: Create custom intents for Amazon Lex.
+- Amazon Lex Model Building Service: Service for building and training conversational models.
+- Amazon Lex Runtime: Service for integrating Amazon Lex into applications.
+- Amazon Polly Neural Text-to-Speech: Advanced text-to-speech service.
+- Amazon Transcribe Medical: Medical transcription service.
+- Amazon Transcribe Medical V2: Transcribe medical conversations accurately.
+- AWS Ground Station: Communicate with satellites and process satellite data.
+- AWS DeepRacer: Reinforcement learning for autonomous vehicle simulations.
+- AWS RoboMaker: Service for developing, simulating, and deploying robotics applications.
+- AWS RoboMaker Studio: Build and simulate robot applications.
+- AWS IoT Greengrass ML Inference: Run machine learning inference on edge devices.
+- AWS IoT Edge: Extend AWS IoT to edge devices for IoT applications.
+- AWS IoT FleetWise Edge: Manage IoT device fleets at the edge.
+- AWS IoT SiteWise Edge: Process IoT data locally at the edge.
+- AWS IoT TwinMaker Edge: Create digital twins at the edge.
+- Amazon Monitron Edge: Local monitoring of industrial equipment.
+- AWS IoT Analytics Transfer for Apache Kafka: Transfer data to and from Apache Kafka.
+- AWS IoT Events Data Plane: Detect and respond to IoT events.
+- AWS IoT Events Rules Engine: Define rules for handling IoT events.
+- Amazon Forecast Query Service Query API: Query Amazon Forecast service for predictions.
+- Amazon Forecast Accelerator Accelerator API: Query Amazon Forecast Accelerator for forecasts.
+- Amazon SageMaker Studio Lab: Set up machine learning environments for labs.
+- Amazon SageMaker Experiments Notebook Instance: Run machine learning experiments in notebooks.
+- Amazon SageMaker Pipelines Pipeline Instance: Execute machine learning pipelines.
+- Amazon SageMaker Autopilot Model Builder Job: Build models automatically with Autopilot.
+- Amazon SageMaker Canvas Workflow Job: Run machine learning workflows with Canvas.
+- Augmented Reality Developer Toolkit for Unity: Create AR experiences in Unity.
+- Augmented Reality Developer Toolkit for Web: Develop web-based AR experiences.
+- Sumerian Scene Editor: Edit and create 3D scenes for Sumerian.
+- Sumerian Host: Host and deploy Sumerian applications.
+- Amazon Rekognition Custom Labels Ground Truth: Create labeled training data for Rekognition.
+- Polly Neural Text-to-Speech V2 Custom Voice Synthesis: Create custom voices for Polly TTS.
+- Amazon Elastic Inference Accelerator API: Manage Elastic Inference accelerators.
+- Amazon Elastic Kubernetes Service Anywhere for VMware Control Plane API: Control EKS Anywhere for VMware.
+- AWS Karpenter for EKS Anywhere API: Manage EKS Anywhere for Kubernetes.
+- AWS Distro for OpenTelemetry Collector: Collect and process observability data.
+- AWS App Mesh Control Plane Node: Manage the App Mesh control plane node.
+- AWS Bottlerocket Container Registry: Registry for Bottlerocket container images.
+- AWS Outposts for VMware Cloud Foundation Manager: Manage VMware Cloud Foundation on AWS Outposts.
+- AWS Outposts for Rackspace Private Cloud Manager: Manage Rackspace Private Cloud on AWS Outposts.
+- AWS Wavelength Zones for 5G API: Deploy applications in 5G Wavelength Zones.
+- AWS Local Zones for Latency-Sensitive Applications API: Deploy applications in Local Zones.
+- AWS SimSpace Weaver for Robotics Simulator: Simulate robotics applications with SimSpace Weaver.
+- AWS RoboMaker Simulation World: Simulate robotic worlds and environments.
+- AWS RoboMaker FleetWise Industrial Edge: Manage robotic fleets at the industrial edge.
+- AWS IoT Core Device SDK for C++: Use C++ SDKs for AWS IoT Core.
+- AWS IoT SiteWise Asset Model: Define asset models for AWS IoT SiteWise.
+- AWS IoT TwinMaker Graph: Create graphs of IoT device twins.
+- Amazon Monitron Dashboards: Monitor industrial equipment with dashboards.
+- Amazon Forecast Query Service Federated Queries API: Query Amazon Forecast with federated queries.
+- Amazon Forecast Accelerator Federated Queries API: Use federated queries with Forecast Accelerator.
+- Amazon SageMaker Model Cards for Explainability API: Use model cards for model explainability.
+- Amazon SageMaker Autopilot Jobs for Text Classification API: Use Autopilot for text classification.
+- Amazon SageMaker Autopilot Experiments for Object Detection API: Experiment with object detection using Autopilot.
+- Amazon SageMaker Pipelines Experiments for Text Summarization API: Experiment with text summarization pipelines.
+- Amazon Comprehend Custom Entities Training Jobs for Named Entity Recognition (NER) API: Train custom NER models with Comprehend.
+- Amazon Comprehend Custom Classifier Training Jobs for Multi-Label Classification API: Train custom classifiers with Comprehend.
+- Amazon Lex V2 Custom Slot Type Training Jobs for Datetime Resolution API: Train custom slot types for date and time resolution with Lex.
+- Amazon Lex V2 Custom Intent Training Jobs for Dialog Management API: Train custom intents for dialog management with Lex.
+- Amazon Polly Neural TTS V2 Custom Voice Training Jobs for Neural Text-to-Speech API: Train custom voices for neural text-to-speech with Polly.
+- Amazon Transcribe Medical V2 Custom Vocabulary Training Jobs for Medical Transcription API: Train custom vocabularies for medical transcription with Transcribe.
+- AWS App Mesh Virtual Service: Manage virtual services in AWS App Mesh.
+- AWS Cloud Development Kit (CDK) for Go: Use CDK to build infrastructure in Go.
+- AWS Cloud9 Extensions CLI: Manage Cloud9 extensions with the CLI.
+- AWS Lake Formation Governance Rules: Define governance rules for data in Lake Formation.
+- AWS Glue DataBrew Jobs API Version 2: API for AWS Glue DataBrew Jobs, which is a data preparation service.
+- AWS Glue Data Catalog Serverless Database Engine API Version 2: API for the serverless database engine in the AWS Glue Data Catalog.
+- AWS Glue Workflows Orchestrator API Version 2: API for orchestrating workflows in AWS Glue, a data integration service.
+- Amazon Athena Federated Queries API Version 2: API for Amazon Athena, a serverless query service that allows you to query data in Amazon S3 using SQL.
+- Amazon Redshift Spectrum External Table: A feature of Amazon Redshift that allows you to query data in Amazon S3 using external tables.
 
 ## Microsoft Azure Interview Questions
 
