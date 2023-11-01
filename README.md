@@ -2199,6 +2199,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **Amazon Personalize:** Build real-time recommendations into applications.
 - **Amazon Kendra:** Enterprise search service powered by machine learning.
 - **Amazon SageMaker Canvas:** Quickly build, train, and deploy machine learning models without writing code.
+- **AWS Panorama:** A machine learning service that helps you build and deploy computer vision applications at scale.
 
 ### Chat and Conversational Interfaces
 
@@ -2213,6 +2214,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **AWS Cloud9:** Cloud-based integrated development environment (IDE).
 - **AWS Cloud Development Kit (CDK):** Framework for defining cloud infrastructure as code.
 - **AWS Serverless Application Model (SAM):** Framework for building serverless applications.
+- **AWS SDK:** Collection of developer tools and libraries that make it easy to build applications on AWS.
 
 ### Management and Monitoring
 
