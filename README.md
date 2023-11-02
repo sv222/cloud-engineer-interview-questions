@@ -2228,7 +2228,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **AWS Cloud9:** Cloud-based integrated development environment (IDE).
 - **AWS Cloud Development Kit (CDK):** An open-source software development framework to model and provision your cloud application resources using familiar programming languages.
 - **AWS Serverless Application Model (SAM):** An open-source framework that makes it easy to build, deploy, and manage serverless applications on AWS. SAM applications are made up of AWS Lambda functions, Amazon API Gateway APIs, and other AWS resources.
-- **AWS SDK:** A collection of software development kits (SDKs) that you can use to access and manage AWS services (for variaty of programming language).
+- **AWS SDK:** A collection of software development kits (SDKs) that you can use to access and manage AWS services (for a variaty of programming language).
 - **AWS Amplify:** A collection of tools and services that makes it easy to develop mobile and web applications.
 - **AWS Lightsail:** A virtual private server (VPS) service that provides developers with a simple and affordable way to launch and manage virtual servers in the cloud.
 - **AWS AppSync:** A fully managed service that makes it easy to build serverless, real-time applications (GraphQL API).
@@ -2237,7 +2237,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 
 - **Amazon CloudWatch:** Monitoring and management service for AWS resources.
 - **Amazon CloudTrail:** Auditing and monitoring service for AWS account activity.
-- **AWS Systems Manager:** Unified interface for managing AWS resources.
+- **AWS Systems Manager:** A collection of services and features that helps you automate the configuration, management, and deployment of applications on AWS.
 - **AWS OpsWorks:** A service that makes it easy to deploy, manage, and scale server-based applications, supports Puppet and Chef.
 - **AWS Config:** Configuration management service for assessing, auditing, and evaluating resources.
 - **AWS Systems Manager Automation:** Service for automating operational tasks.
@@ -2249,7 +2249,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 
 ### Security and Compliance
 
-- **Amazon GuardDuty:** Threat detection service.
+- **Amazon GuardDuty:** An intelligent security service that uses machine learning to continuously monitor your AWS accounts and workloads for malicious activity and unauthorized behavior.
 - **AWS Audit Manager:** Service for simplifying and automating compliance audits.
 - **AWS Compliance Manager:** Service for managing compliance programs.
 - **AWS Security Hub:** Service for security and compliance.
@@ -2345,7 +2345,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 ### Blockchain
 
 - **Amazon Managed Blockchain:** Create and manage scalable blockchain networks.
-- **Amazon Quantum Ledger Database (QLDB):** Fully managed ledger database.
+- **Amazon Quantum Ledger Database (QLDB):**  A fully managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log.
 
 ### Satellite
 
@@ -2369,17 +2369,17 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 
 ### Customer Engagement
 
-- **Amazon Connect:** Cloud contact center service.
+- **Amazon Connect:** An omnichannel cloud contact center service that makes it easy to set up, manage, and scale your contact center.
 
 ### End User Computing
 
-- **Amazon WorkSpaces:** Managed desktop computing service.
-- **Amazon AppStream:** Stream desktop applications securely to a browser.
+- **Amazon WorkSpaces:** A managed, secure cloud desktop service that provides users with a persistent, desktop computing experience in the cloud.
+- **Amazon AppStream:** A fully managed, secure application streaming service that delivers a high-quality app experience to users on any device, anywhere.
 
 ### Management Tools
 
-- **AWS Service Catalog:** Create catalogs of approved products for use.
-- **AWS License Manager:** Track licenses across AWS resources.
+- **AWS Service Catalog:** A service that makes it easy to create, manage, and deliver IT services to end users, allows to define and manage a catalog of standardized IT services.
+- **AWS License Manager:** A service that helps you manage your software licenses across your AWS resources.
 - **AWS Systems Manager Parameter Store:** Store and retrieve configuration data.
 
 ### Media Services
@@ -2388,8 +2388,8 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 
 ### Migration
 
-- **AWS Migration Hub:** Track migrations across AWS and on-premises.
-- **AWS Application Discovery Service:** Discover on-premises applications to migrate.
+- **AWS Migration Hub:** A service that helps you plan, migrate, and manage your migrations to AWS.
+- **AWS Application Discovery Service (ADS):** A service that discovers applications running on your on-premises infrastructure, used to discover your on-premises applications and collect data about their dependencies, relationships, and usage patterns.
 - **Amazon Database Migration Service (DMS):** A service that helps you migrate databases from on-premises to AWS or from one AWS database service to another.
 
 ## Microsoft Azure Interview Questions
