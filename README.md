@@ -2198,7 +2198,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 
 ### Machine Learning and AI
 
-- **Amazon SageMaker:** Fully managed machine learning service.
+- **Amazon SageMaker:** A fully managed machine learning (ML) service allows to build, train, and deploy ML models quickly and easily.
 - **Amazon Rekognition:** Image and video analysis service for object detection and recognition.
 - **Amazon Polly:** Text-to-speech service.
 - **Amazon Comprehend:** Natural language processing service for text analysis.
@@ -2209,9 +2209,9 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **Amazon Lookout for Vision:** Find defects in images using computer vision.
 - **Amazon Lookout for Equipment:** Detect abnormal equipment behavior using machine learning.
 - **Amazon Lookout for Metrics:** Find anomalies in metrics using machine learning.
-- **Amazon Fraud Detector:** Machine learning for detecting fraud.
-- **Amazon Personalize:** Build real-time recommendations into applications.
-- **Amazon Kendra:** Enterprise search service powered by machine learning.
+- **Amazon Fraud Detector:** Machine learning for detecting fraud by analyzing a variety of data points, such as transaction history, customer demographics, and device information.
+- **Amazon Personalize:**  A machine learning service that helps you create personalized experiences for your customers.
+- **Amazon Kendra:** A cloud-based enterprise search service that uses machine learning to index and search all of your enterprise content.
 - **Amazon SageMaker Canvas:** Quickly build, train, and deploy machine learning models without writing code.
 - **AWS Panorama:** A machine learning service that helps you build and deploy computer vision applications at scale.
 
@@ -2222,13 +2222,13 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 ### Developer Tools
 
 - **AWS CodePipeline:** Continuous integration and continuous delivery (CI/CD) service.
-- **AWS CodeBuild:** Fully managed build service.
+- **AWS CodeBuild:** A fully managed continuous integration (CI) service that compiles source code, runs tests, and produces software packages that are ready to deploy.
 - **AWS CodeDeploy:** Deployment service for applications to Amazon EC2 instances.
 - **AWS CloudFormation:** Infrastructure as Code service for provisioning AWS resources.
 - **AWS Cloud9:** Cloud-based integrated development environment (IDE).
-- **AWS Cloud Development Kit (CDK):** Framework for defining cloud infrastructure as code.
-- **AWS Serverless Application Model (SAM):** Framework for building serverless applications.
-- **AWS SDK:** Collection of developer tools and libraries that make it easy to build applications on AWS.
+- **AWS Cloud Development Kit (CDK):** An open-source software development framework to model and provision your cloud application resources using familiar programming languages.
+- **AWS Serverless Application Model (SAM):** An open-source framework that makes it easy to build, deploy, and manage serverless applications on AWS. SAM applications are made up of AWS Lambda functions, Amazon API Gateway APIs, and other AWS resources.
+- **AWS SDK:** A collection of software development kits (SDKs) that you can use to access and manage AWS services (for variaty of programming language).
 - **AWS Amplify:** A collection of tools and services that makes it easy to develop mobile and web applications.
 - **AWS Lightsail:** A virtual private server (VPS) service that provides developers with a simple and affordable way to launch and manage virtual servers in the cloud.
 - **AWS AppSync:** A fully managed service that makes it easy to build serverless, real-time applications (GraphQL API).
