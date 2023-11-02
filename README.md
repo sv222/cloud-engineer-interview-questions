@@ -2176,8 +2176,8 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **AWS Transit Gateway Peering:** A service that allows you to connect two or more AWS Transit Gateways together.
 - **AWS Transit Gateway Network Manager:** A service that provides a unified view of your AWS Transit Gateway networks and helps you manage them centrally.
 - **AWS Global Accelerator:** Improve application availability and performance using the AWS global network.
-- **AWS PrivateLink:** Access services privately without using public Internet.
-- **AWS Client VPN:** Managed VPN for secure remote access to AWS and on-premises resources.
+- **AWS PrivateLink:** A secure way to connect two services that are running in a virtual private cloud (VPC) or on-premises network to services running in AWS.
+- **AWS Client VPN:** Managed VPN for secure remote access to AWS and on-premises resources, allows to connect your devices to your AWS account over a secure encrypted tunnel.
 
 ### Content Delivery
 
@@ -2191,8 +2191,8 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 
 ### Queuing
 
-- **Amazon Simple Queue Service (SQS):** Message queuing service for decoupling applications.
-- **Amazon Simple Workflow Service (SWF):** Workflow service for building scalable and resilient applications.
+- **Amazon Simple Queue Service (SQS):** A fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications.
+- **Amazon Simple Workflow Service (SWF):** A fully managed workflow coordination service that makes it easy to build applications that coordinate work across distributed components.
 - **Amazon MQ:** Managed message broker service, supports Apache ActiveMQ and RabbitMQ.
 - **Amazon Managed Streaming for Apache Kafka (MSK):** A fully managed service that makes it easy to run, manage, and scale Apache Kafka clusters on AWS.
 
@@ -2228,16 +2228,16 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **AWS Cloud9:** Cloud-based integrated development environment (IDE).
 - **AWS Cloud Development Kit (CDK):** An open-source software development framework to model and provision your cloud application resources using familiar programming languages.
 - **AWS Serverless Application Model (SAM):** An open-source framework that makes it easy to build, deploy, and manage serverless applications on AWS. SAM applications are made up of AWS Lambda functions, Amazon API Gateway APIs, and other AWS resources.
-- **AWS SDK:** A collection of software development kits (SDKs) that you can use to access and manage AWS services (for a variaty of programming language).
+- **AWS SDK:** A collection of software development kits (SDKs) that you can use to access and manage AWS services (for a variety of programming languages).
 - **AWS Amplify:** A collection of tools and services that makes it easy to develop mobile and web applications.
-- **AWS Lightsail:** A virtual private server (VPS) service that provides developers with a simple and affordable way to launch and manage virtual servers in the cloud.
+- **AWS Lightsail:** A service that makes it easy to deploy and manage websites and web applications and offers a variety of pre-configured virtual machines (VMs) with different levels of resources.
 - **AWS AppSync:** A fully managed service that makes it easy to build serverless, real-time applications (GraphQL API).
 
 ### Management and Monitoring
 
-- **Amazon CloudWatch:** Monitoring and management service for AWS resources.
-- **Amazon CloudTrail:** Auditing and monitoring service for AWS account activity.
-- **AWS Systems Manager:** A collection of services and features that helps you automate the configuration, management, and deployment of applications on AWS.
+- **Amazon CloudWatch:** A monitoring and observability service that collects logs, metrics, and events to provide data and actionable insights to help you monitor your applications, infrastructure, and services.
+- **Amazon CloudTrail:** A service that helps you track and audit user activity and API usage across your AWS resources.
+- **AWS Systems Manager:** A collection of services and features that helps automate management of your AWS resources, including patch management, configuration management, fleet inventory, run command, and maintenance window.
 - **AWS OpsWorks:** A service that makes it easy to deploy, manage, and scale server-based applications, supports Puppet and Chef.
 - **AWS Config:** Configuration management service for assessing, auditing, and evaluating resources.
 - **AWS Systems Manager Automation:** Service for automating operational tasks.
