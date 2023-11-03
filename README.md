@@ -2187,6 +2187,17 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 ### Content Delivery
 
 - **Amazon CloudFront:** Content delivery network (CDN) for fast content delivery.
+- **CloudFront Origin Access Identity (OAI):** An OAI is a special CloudFront user that you can associate with Amazon S3 origins, so that you can secure all or just some of your Amazon S3 content. OAIs can be used to restrict access to specific objects or buckets in Amazon S3, or to specific IP addresses or ranges.
+- **CloudFront Origin Domain Name (ODN):** An ODN is a unique domain name that is assigned to your CloudFront distribution when you create it. The ODN is used to route requests for your content to CloudFront.
+- **CloudFront Signed URL:** A CloudFront signed URL is a URL that has been signed with a CloudFront signing key. This type of URL is used to restrict access to specific objects in CloudFront.
+- **CloudFront Function:** A CloudFront function is a Lambda function that can be used to modify or filter the content that is delivered by CloudFront.
+- **CloudFront Viewer Request Header:** A CloudFront viewer request header is a header that is added to requests that are sent to CloudFront. Viewer request headers can be used to provide additional information to CloudFront, such as the user's IP address or the device that is being used to access the content.
+- **CloudFront Viewer Response Header:** A CloudFront viewer response header is a header that is added to responses that are sent from CloudFront. Viewer response headers can be used to provide additional information to the viewer, such as the cache status of the content or the size of the content.
+- **CloudFront Distribution:** A CloudFront distribution is a collection of resources that are delivered to viewers by CloudFront. A distribution can include one or more origins, such as Amazon S3 buckets or Amazon EC2 instances.
+- **CloudFront Edge Location:** A CloudFront edge location is a server that is located around the world. Edge locations are used to cache content and deliver it to viewers with low latency.
+- **CloudFront Shield:** CloudFront Shield is a managed DDoS protection service that protects your CloudFront distributions from DDoS attacks.
+- **CloudFront Streaming Delivery:** CloudFront Streaming Delivery is a service that allows you to stream video and audio content to viewers with low latency and high transfer speeds.
+- **CloudFront API Acceleration:** CloudFront API Acceleration is a service that allows you to accelerate your APIs by caching responses and routing requests to the closest edge location.
 - **Amazon CloudFront Streaming:** A service that delivers live and on-demand video to viewers around the world.
 
 ### Messaging
@@ -2340,9 +2351,10 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 ### Governance and Compliance
 
 - **AWS Organizations:** Centrally manage multiple AWS accounts.
-- **AWS Control Tower:** Set up and govern a secure, compliant multi-account environment.
+- **AWS Control Tower:** A service that helps you set up and govern a secure, multi-account AWS environment.
 - **Amazon Macie:** Discover, classify, and protect sensitive data using ML.
 - **AWS Key Management Service (KMS):** Managed service for creating and controlling encryption keys.
+- **AWS CloudHSM:** A cloud-based hardware security module (HSM) that enables you to generate and store cryptographic keys in the cloud.
 - **AWS CloudTrail:** Track user activity and API usage.
 - **AWS Config:** Track resource configuration changes.
 - **AWS Audit Manager:** Continuously audit your AWS usage.
