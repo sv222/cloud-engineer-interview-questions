@@ -2153,6 +2153,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **Amazon Elastic Block Store (EBS):** Block storage service for EC2 instances.
 - **Amazon Elastic File System (EFS):** Managed file storage service for EC2 instances.
 - **Amazon Glacier:** Low-cost storage service for archival data.
+- **Amazon S3 File Gateway** enables you to store file data as objects in Amazon S3 cloud storage for data lakes, backups, and ML workflows.
 
 ### Databases
 
@@ -2177,14 +2178,11 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **AWS Transit Gateway Peering:** A service that allows you to connect two or more AWS Transit Gateways together.
 - **AWS Transit Gateway Network Manager:** A service that provides a unified view of your AWS Transit Gateway networks and helps you manage them centrally.
 - **AWS Global Accelerator:** Improve application availability and performance using the AWS global network.
-<<<<<<< Updated upstream
 - **AWS PrivateLink:** A secure way to connect two services that are running in a virtual private cloud (VPC) or on-premises network to services running in AWS.
 - **AWS Client VPN:** Managed VPN for secure remote access to AWS and on-premises resources, allows to connect your devices to your AWS account over a secure encrypted tunnel.
-=======
 - **AWS PrivateLink:** Access services privately without using public Internet.
 - **AWS Client VPN:** Managed VPN for secure remote access to AWS and on-premises resources.
 - **AWS VPC endpoints:** are network interfaces that allow resources in a VPC to communicate with AWS services without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection.
->>>>>>> Stashed changes
 
 ### Content Delivery
 
@@ -2333,8 +2331,8 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 
 ### Operations
 
-- **AWS Artifact:** On-demand access to AWS compliance and security reports.
-- **AWS Trusted Advisor:** A service that helps you automate, streamline, and scale your AWS auditing and compliance activities. It provides a comprehensive set of pre-built audit rules and tests, which you can use to assess your AWS environment against industry standards, best practices, and your own organizational policies.
+- **AWS Artifact:** A service that helps you store, manage, and share your AWS configuration and infrastructure as code.
+- **AWS Trusted Advisor:** A service that automates AWS auditing and compliance, providing pre-built rules and tests to assess your environment against industry standards, best practices, and your own policies.
 - **AWS Well-Architected Tool:** Review and improve your cloud architectures.
 - **AWS Resilience Hub:** Prepare your business for disruptions and uncertainties.
 - **Amazon DevOps Guru:** Improve application availability with ML.
