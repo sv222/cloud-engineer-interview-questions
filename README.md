@@ -2151,7 +2151,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 
 - **Amazon Simple Storage Service (S3):** Object storage service for storing and retrieving data.
 - **Amazon Elastic Block Store (EBS):** Block storage service for EC2 instances.
-- **Amazon Elastic File System (EFS):** Managed file storage service for EC2 instances.
+- **Amazon Elastic File System (EFS):** A fully managed, scalable file system for use with Amazon Web Services (AWS) cloud services and on-premises resources.
 - **Amazon Glacier:** Low-cost storage service for archival data.
 - **Amazon S3 File Gateway** enables you to store file data as objects in Amazon S3 cloud storage for data lakes, backups, and ML workflows.
 
@@ -2161,8 +2161,8 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **Amazon Aurora:** Relational database service that is MySQL- and PostgreSQL-compatible.
 - **Amazon Neptune:** Managed graph database service.
 - **Amazon Timestream:** Fully managed, serverless time-series database.
-- **Amazon Redshift:** Data warehousing service for analytics.
-- **Amazon DynamoDB:** Fully managed NoSQL database service.
+- **Amazon Redshift:** A fully managed, petabyte-scale data warehouse service in the cloud, designed to handle large analytical workloads with high performance and scalability. Redshift is built on top of massively parallel processing (MPP) technology, which allows it to distribute queries across multiple nodes to process data in parallel.
+- **Amazon DynamoDB:** A fully managed, serverless, key-value and document database service that provides single-digit millisecond performance at any scale.
 - **Amazon DynamoDB Accelerator (DAX):** A fully managed, highly available, in-memory cache for DynamoDB that delivers up to 10x performance improvement.
 - **Amazon DocumentDB:** Fully managed, scalable, highly available, and durable document database that is fully compatible with MongoDB.
 - **Amazon Keyspaces (for Apache Cassandra):** A scalable, highly available, and managed Apache Cassandra–compatible database service.
@@ -2175,7 +2175,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **Amazon Route 53:** Scalable and highly available Domain Name System (DNS) web service.
 - **AWS Direct Connect:** A dedicated network connection from your on-premises data center to AWS.
 - **AWS Transit Gateway:** Service for connecting multiple VPCs and on-premises networks.
-- **AWS VPN CloudHub:** Service for connecting multiple remote networks using VPN.
+- **AWS VPN CloudHub:** A managed service that allows you to connect multiple AWS Virtual Private Clouds (VPCs) to each other and to your on-premises network via a hub-and-spoke model.
 - **AWS Transit Gateway Peering:** A service that allows you to connect two or more AWS Transit Gateways together.
 - **AWS Transit Gateway Network Manager:** A service that provides a unified view of your AWS Transit Gateway networks and helps you manage them centrally.
 - **AWS Global Accelerator:** Improve application availability and performance using the AWS global network.
