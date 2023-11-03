@@ -2163,6 +2163,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **Amazon Redshift:** Data warehousing service for analytics.
 - **Amazon DynamoDB:** Fully managed NoSQL database service.
 - **Amazon DocumentDB:** Fully managed, scalable, highly available, and durable document database that is fully compatible with MongoDB.
+- **Amazon Keyspaces (for Apache Cassandra):** A scalable, highly available, and managed Apache Cassandra–compatible database service.
 
 ### Networking
 
@@ -2176,8 +2177,14 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **AWS Transit Gateway Peering:** A service that allows you to connect two or more AWS Transit Gateways together.
 - **AWS Transit Gateway Network Manager:** A service that provides a unified view of your AWS Transit Gateway networks and helps you manage them centrally.
 - **AWS Global Accelerator:** Improve application availability and performance using the AWS global network.
+<<<<<<< Updated upstream
 - **AWS PrivateLink:** A secure way to connect two services that are running in a virtual private cloud (VPC) or on-premises network to services running in AWS.
 - **AWS Client VPN:** Managed VPN for secure remote access to AWS and on-premises resources, allows to connect your devices to your AWS account over a secure encrypted tunnel.
+=======
+- **AWS PrivateLink:** Access services privately without using public Internet.
+- **AWS Client VPN:** Managed VPN for secure remote access to AWS and on-premises resources.
+- **AWS VPC endpoints:** are network interfaces that allow resources in a VPC to communicate with AWS services without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection.
+>>>>>>> Stashed changes
 
 ### Content Delivery
 
@@ -2246,6 +2253,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **AWS Systems Manager Application Discovery Service:** Service for discovering and tracking application assets.
 - **AWS Systems Manager Automation Runbook Designer:** Service for creating automation runbooks.
 - **Amazon DevOps Guru:** ML-powered service to improve application availability.
+- **AWS Control Tower:** A managed service that helps you set up and govern a secure, multi-account AWS environment.
 
 ### Security and Compliance
 
@@ -2326,7 +2334,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 ### Operations
 
 - **AWS Artifact:** On-demand access to AWS compliance and security reports.
-- **AWS Trusted Advisor:** Optimize performance and security with real-time guidance.
+- **AWS Trusted Advisor:** A service that helps you automate, streamline, and scale your AWS auditing and compliance activities. It provides a comprehensive set of pre-built audit rules and tests, which you can use to assess your AWS environment against industry standards, best practices, and your own organizational policies.
 - **AWS Well-Architected Tool:** Review and improve your cloud architectures.
 - **AWS Resilience Hub:** Prepare your business for disruptions and uncertainties.
 - **Amazon DevOps Guru:** Improve application availability with ML.
@@ -2340,7 +2348,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **AWS CloudTrail:** Track user activity and API usage.
 - **AWS Config:** Track resource configuration changes.
 - **AWS Audit Manager:** Continuously audit your AWS usage.
-- **AWS Security Hub:** Unified security and compliance center.
+- **AWS Security Hub:** A cloud security posture management service that provides a comprehensive view of your security posture across your AWS accounts and Regions.
 
 ### Blockchain
 
