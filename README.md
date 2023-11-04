@@ -2296,6 +2296,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **Amazon Athena:** Interactive query service for data analysis.
 - **Amazon Athena Federated Queries API Version 2:** API for Amazon Athena, a serverless query service that allows you to query data in Amazon S3 using SQL.
 - **Amazon Redshift Spectrum External Table:** A feature of Amazon Redshift that allows you to query data in Amazon S3 using external tables.
+- **AWS DataSync:** A hybrid cloud transfer service that makes it easy to automate data transfers between on-premises storage and AWS storage services.
 
 ### Internet of Things (IoT)
 
@@ -2391,6 +2392,9 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **AWS Migration Hub:** A service that helps you plan, migrate, and manage your migrations to AWS.
 - **AWS Application Discovery Service (ADS):** A service that discovers applications running on your on-premises infrastructure, used to discover your on-premises applications and collect data about their dependencies, relationships, and usage patterns.
 - **Amazon Database Migration Service (DMS):** A service that helps you migrate databases from on-premises to AWS or from one AWS database service to another.
+- **AWS Application Migration Service (MGN):** Lift-and-shift applications to AWS with minimal downtime.
+- **AWS Server Migration Service (SMS):** Migrate physical and virtual servers to AWS without downtime.
+- **AWS Snowball:** Transfer large amounts of data to and from AWS using secure devices.
 
 ## Microsoft Azure Interview Questions
 
