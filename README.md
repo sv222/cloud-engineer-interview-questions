@@ -1943,9 +1943,27 @@ AWS Fargate is a serverless compute engine for Docker containers. AWS ECS is a c
 
 ### How does AWS Artifact enhance compliance and security?
 
-AWS Artifact is a service that helps you to store, manage, and share software artifacts. Artifact can be used to store a variety of software artifacts, such as Docker images, JAR files, and Python wheels.
+AWS Artifact enhances compliance and security in a number of ways.
 
-Artifact enhances compliance and security by providing a central place to store and manage your software artifacts. Artifact also provides features such as access control and audit logging to help you to keep your artifacts secure.
+**Compliance**
+
+* AWS Artifact provides a central repository for all of your AWS security and compliance documents. This makes it easy to find and access the documents you need when preparing for audits or generating compliance reports.
+* AWS Artifact provides a variety of reports that can help you demonstrate compliance with specific AWS services and regulations.
+* AWS Artifact makes it easy to track the status of your AWS agreements, such as the Business Associate Addendum (BAA). This can help you ensure that you are always in compliance with your AWS agreements.
+
+**Security**
+
+* AWS Artifact uses a variety of security measures to protect your data, including encryption, access control, and auditing.
+* AWS Artifact integrates with AWS Identity and Access Management (IAM) to ensure that only authorized users can access your data.
+* AWS Artifact logs all activity to CloudTrail, so that you can audit who accessed your data and what they did with it.
+
+Here are some specific examples of how AWS Artifact can be used to enhance compliance and security:
+
+* A healthcare organization can use AWS Artifact to store and manage its HIPAA compliance documents. This can help the organization prepare for HIPAA audits and demonstrate compliance with HIPAA regulations.
+* A financial services organization can use AWS Artifact to store and manage its PCI DSS compliance documents. This can help the organization prepare for PCI DSS audits and demonstrate compliance with PCI DSS regulations.
+* A government organization can use AWS Artifact to store and manage its FedRAMP compliance documents. This can help the organization prepare for FedRAMP audits and demonstrate compliance with FedRAMP requirements.
+
+AWS Artifact is a powerful tool that can help AWS customers of all sizes enhance their compliance and security posture.
 
 ### What is AWS PrivateLink, and how does it improve network security?
 
