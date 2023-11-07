@@ -1843,6 +1843,20 @@ Kinesis Data Streams is a real-time data streaming service that can be used to i
 
 Kinesis Firehose is a near-real-time data ingestion service that can be used to ingest and load data into data lakes, data warehouses, and other analytics destinations. Kinesis Firehose automatically converts and configures data for a variety of destinations.
 
+To choose between Kinesis Data Streams and Kinesis Firehose, you need to consider your specific needs and requirements. If you need to process data in real time, then Kinesis Data Streams is the better choice. If you need to load streaming data into data stores or analytics services, then Kinesis Firehose is the better choice.
+
+Here are some examples of when to use Kinesis Data Streams:
+
+* To build a real-time stock trading application.
+* To build a social media monitoring application that analyzes tweets and other social media posts in real time.
+* To build a fraud detection application that analyzes transactions in real time to identify fraudulent activity.
+
+Here are some examples of when to use Kinesis Firehose:
+
+* To load streaming data into a data lake, such as Amazon S3.
+* To load streaming data into a data store, such as Amazon Redshift or Amazon DynamoDB.
+* To load streaming data into an analytics service, such as Amazon Athena or Amazon Kinesis Analytics.
+
 ### How do you implement high availability in AWS?
 
 There are a number of ways to implement high availability in AWS. Some common methods include:
@@ -2195,8 +2209,6 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **AWS Global Accelerator:** Improve application availability and performance using the AWS global network.
 - **AWS PrivateLink:** A secure way to connect two services that are running in a virtual private cloud (VPC) or on-premises network to services running in AWS.
 - **AWS Client VPN:** Managed VPN for secure remote access to AWS and on-premises resources, allows to connect your devices to your AWS account over a secure encrypted tunnel.
-- **AWS PrivateLink:** Access services privately without using public Internet.
-- **AWS Client VPN:** Managed VPN for secure remote access to AWS and on-premises resources.
 - **AWS VPC endpoints:** are network interfaces that allow resources in a VPC to communicate with AWS services without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection.
 
 ### Content Delivery
