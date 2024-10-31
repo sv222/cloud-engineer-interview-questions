@@ -2468,7 +2468,7 @@ Microsoft Azure is a cloud computing platform that provides a wide range of serv
 Azure provides core services like Compute, which includes virtual machines and containers; Storage for data solutions like Blob and Disk Storage; Networking to manage connectivity with services like Virtual Network; and Databases including SQL Database and Cosmos DB. These core services help build, deploy, and manage applications in the cloud efficiently
 
 ### 3. What is Azure Resource Manager (ARM)?
-Azure Resource Manager (ARM) is the deployment and management service for Azure. It provides a way to organize resources, apply access control, and manage them through templates. ARM ensures resources are deployed consistently and makes it easy to monitor and control access across all resources in a solution.
+Azure Resource Manager (ARM) is a RESTful API and a deployment and management service for Azure. It provides a way to organize resources, apply access control, and manage them through templates. ARM ensures resources are deployed consistently and makes it easy to monitor and control access across all resources in a solution. Developers can use ARM to automate resource management tasks and enable a consistent and repeatable deployment process.
 
 4. Describe the differences between Azure IaaS, PaaS, and SaaS.
 5. How does Azure Virtual Network work, and what are its components?
