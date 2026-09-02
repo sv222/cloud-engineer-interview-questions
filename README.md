@@ -133,9 +133,9 @@ Here is a generated table of contents for the provided Markdown file:
 | Feature | IaaS | PaaS | SaaS |
 |---|---|---|---|
 | Computing resources | Yes | Yes | No |
-| Operating system | Yes | Yes | No |
+| Operating system | Yes | No | No |
 | Applications | Yes | Yes | No |
-| Management responsibility | Infrastructure, OS, applications | Platform, applications | Applications only |
+| Management responsibility | Infrastructure, OS, middleware | Runtime, middleware | None (access only) |
 
 ### What are the major cloud service providers, and what are their core services?
 
@@ -244,7 +244,7 @@ Cloud orchestration is the process of automating the deployment, management, and
 There are a number of ways to optimize costs in a cloud environment, including:
 
 * **Rightsizing:** Rightsizing is the process of ensuring that you are using the right amount of resources for your needs. This can be done by monitoring your resource usage and adjusting your resource allocation accordingly.
-* **Reserved instances:** Reserved instances are cloud resources that you can purchase for a one-year or three-year commitment. Reserved instances are typically less expensive than on-demand resources.
+* **Reserved instances:** Reserved instances are a pricing model that offers a discount in exchange for a one-year or three-year commitment to use capacity in a region. Reserved instances are typically less expensive than on-demand resources.
 * **Spot instances:** Spot instances are cloud resources that are available at a discounted price. Spot instances are typically used for workloads that can be interrupted, such as batch processing jobs.
 * **Discounts:** Cloud providers offer a variety of discounts, such as volume discounts and discounts for committed use.
 
@@ -340,7 +340,7 @@ To plan a cloud migration strategy, you should:
 
 1. **Assess your current environment:** This includes understanding your current IT infrastructure, your applications, and your data.
 2. **Define your goals:** What are you hoping to achieve by migrating to the cloud? Do you want to improve performance, reduce costs, or increase agility?
-3. **Choose a cloud migration strategy:** There are a number of different cloud migration strategies, such as lift-and-shift, refactor-and-rehost, and replatform. The best strategy for you will depend on your specific goals and environment.
+3. **Choose a cloud migration strategy:** There are a number of different cloud migration strategies, such as rehost (lift-and-shift), replatform, and refactor. The best strategy for you will depend on your specific goals and environment.
 4. **Develop a migration plan:** Your migration plan should include a detailed timeline, budget, and risk assessment.
 5. **Execute your migration plan:** Once you have developed your migration plan, you need to execute it carefully and monitor your progress.
 
@@ -493,8 +493,8 @@ The components of a cloud network architecture typically include:
 There are a number of ways to handle data migration in the cloud, including:
 
 * **Lift-and-shift:** Lift-and-shift migration involves moving your existing applications and data to the cloud without making any changes to them.
-* **Refactor-and-rehost:** Refactor-and-rehost migration involves making changes to your applications to take advantage of the benefits of the cloud platform.
-* **Replatform:** Replatform migration involves rewriting your applications in a cloud-native programming language.
+* **Refactor:** Refactor migration involves redesigning applications to take full advantage of cloud-native capabilities, such as managed services, microservices, and serverless architectures.
+* **Replatform:** Replatform migration involves making targeted improvements, such as moving to a managed database, without changing the core application architecture.
 
 The best data migration strategy for you will depend on your specific needs and environment.
 
@@ -606,7 +606,7 @@ Serverless databases are databases that are managed by a cloud provider. Serverl
 Here are some examples of serverless databases:
 
 * Amazon Aurora Serverless
-* Google Cloud Spanner
+* Google Cloud Firestore
 * Microsoft Azure Cosmos DB
 
 Serverless databases can be a good choice for a variety of workloads, such as:
@@ -670,7 +670,7 @@ Cloud serverless compute platforms are platforms that allow you to run code with
 
 Here are some examples of cloud serverless compute platforms:
 
-* Amazon Web Services Lambda
+* AWS Lambda
 * Google Cloud Functions
 * Microsoft Azure Functions
 
@@ -895,7 +895,7 @@ Cloud API gateways are a way to manage and secure API access. Cloud API gateways
 Some popular cloud API gateways include:
 
 * Amazon API Gateway
-* Google Cloud Endpoints
+* Google Cloud API Gateway
 * Azure API Management
 
 Cloud API gateways can be used for a variety of purposes, such as:
@@ -948,7 +948,7 @@ Some popular cloud-native service meshes include:
 
 * Istio
 * Linkerd
-* Consul Connect
+* HashiCorp Consul
 
 ### Use of cloud resource tagging
 
