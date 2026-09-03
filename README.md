@@ -1333,7 +1333,7 @@ Amazon SQS (Simple Queue Service) is a fully managed message queuing service tha
 
 AWS Lambda can handle concurrent executions by scaling the number of containers that are running the function. Lambda will automatically scale up the number of containers as needed to handle the increased load.
 
-Lambda also uses a technique called "work stealing" to improve the performance of concurrent executions. Work stealing allows Lambda to redistribute work among containers that are not fully utilized.
+Each request is handled in its own execution environment, and Lambda scales the number of concurrent executions as needed, up to the account-level concurrency limit. You can also configure reserved concurrency or provisioned concurrency for functions that need predictable capacity.
 
 ### What are AWS CloudFormation templates, and how do they work?
 
@@ -1453,7 +1453,7 @@ Some of the features of Amazon Redshift include:
 
 AWS Step Functions is a serverless workflow orchestration service that makes it easy to build and run state machines and workflows. Step Functions helps you to coordinate the execution of multiple steps across multiple AWS services.
 
-Step Functions works by defining a state machine, which is a visual representation of the workflow. The state machine defines the steps in the workflow, the order in which the steps are executed, and the transitions between steps.
+Step Functions works by defining a state machine, a workflow written in Amazon States Language (JSON or YAML). The state machine defines the steps in the workflow, the order in which the steps are executed, and the transitions between steps; Workflow Studio provides a visual editor for it.
 
 Step Functions then executes the state machine and manages the flow of data between steps. Step Functions also handles errors and retries, so you don't have to worry about managing these yourself.
 
@@ -1536,7 +1536,7 @@ AWS Fargate is a serverless compute engine for Docker containers. Fargate makes 
 Some of the benefits of using AWS Fargate include:
 
 * **Reduced operational overhead:** Fargate manages the servers and infrastructure that are needed to run your containers, so you don't have to worry about managing them yourself.
-* **Improved scalability:** Fargate automatically scales your containers to meet demand, so you don't have to worry about scaling them yourself.
+* **Improved scalability:** Fargate provisions the compute for your tasks automatically, and ECS Service Auto Scaling can adjust the number of tasks to meet demand.
 * **Increased security:** Fargate isolates your containers from each other and from the underlying infrastructure, which helps to improve security.
 
 ### How do you monitor AWS resources using CloudWatch Alarms?
@@ -1553,7 +1553,7 @@ Snowball is ideal for transferring large amounts of data to and from AWS, such a
 
 ### Describe AWS CodePipeline and its components.
 
-AWS CodePipeline is a continuous delivery service that helps you to automate the release and deployment process for your applications. CodePipeline builds, tests, and deploys your code every time there is a change, so you can be confident that your application is always up to date.
+AWS CodePipeline is a continuous delivery service that helps you to automate the release and deployment process for your applications. CodePipeline orchestrates the workflow: it invokes other services, such as CodeBuild for building and testing and CodeDeploy for deployments, every time there is a change.
 
 CodePipeline consists of the following components:
 
@@ -1631,13 +1631,13 @@ EKS provides a number of features that make it a good choice for running Kuberne
 
 AWS Serverless Application Model (SAM) is a framework for building and deploying serverless applications on AWS. SAM provides a high-level abstraction for serverless applications, which can make it easier to develop and deploy serverless applications.
 
-To deploy a serverless application using SAM, you first need to create a SAM template. A SAM template is a JSON file that defines your serverless application and its resources.
+To deploy a serverless application using SAM, you first need to create a SAM template. A SAM template is a JSON or YAML file that defines your serverless application and its resources.
 
 Once you have created a SAM template, you can deploy your application using the AWS SAM CLI. The SAM CLI will create and configure all of the resources that are defined in your SAM template.
 
 ### Describe AWS Key Management Service (KMS) and its role in encryption.
 
-AWS Key Management Service (KMS) is a managed service that makes it easy to create and control the cryptographic keys that are used to protect your data. KMS uses hardware security modules (HSMs) to protect and validate your AWS KMS keys under the FIPS 140-2 Cryptographic Module Validation Program.
+AWS Key Management Service (KMS) is a managed service that makes it easy to create and control the cryptographic keys that are used to protect your data. KMS uses hardware security modules (HSMs) validated at FIPS 140-3 Security Level 3 under the Cryptographic Module Validation Program to protect and validate your AWS KMS keys.
 
 KMS plays a crucial role in encryption by providing a centralized and secure way to manage encryption keys. This helps to ensure that your data is always encrypted at rest and in transit, and that only authorized users have access to your encryption keys.
 
@@ -1825,7 +1825,7 @@ AWS Step Functions is a service that makes it easy to build and run state machin
 Step Functions provides a number of features that make it easy to build and run state machines and workflows, including:
 
 * **Visual workflow designer:** Step Functions provides a visual workflow designer that makes it easy to create and edit state machines.
-* **Error handling and retries:** Step Functions automatically handles errors and retries steps.
+* **Error handling and retries:** Step Functions lets you define Retry and Catch behavior per state, so failed steps can be retried or handled according to your workflow.
 * **Integration with other AWS services:** Step Functions integrates with a variety of other AWS services, such as Lambda, ECS, and DynamoDB.
 
 ### What is the difference between Amazon Kinesis Data Streams and Kinesis Firehose?
@@ -1931,7 +1931,7 @@ AWS Fargate is a serverless compute engine for Docker containers. AWS ECS is a c
 |---|---|---|
 | Serverless | Yes | No |
 | Container orchestration | Yes | Yes |
-| Scaling | Automatic | Manual |
+| Scaling | Task count managed by ECS Service Auto Scaling | EC2 Auto Scaling groups |
 | Pricing | Pay-as-you-go | Pay-as-you-go |
 
 ### How does AWS Artifact enhance compliance and security?
