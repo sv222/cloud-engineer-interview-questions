@@ -1601,21 +1601,16 @@ App Runner can be used to deploy a variety of applications, including:
 
 There are two ways to back up and restore AWS RDS databases:
 
-* **Automated backups:** RDS automatically backs up your databases to Amazon S3. You can specify the frequency of the backups and the retention period.
+* **Automated backups:** RDS automatically creates a daily backup of your databases and retains transaction logs, enabling point-in-time recovery. You configure the preferred backup window and the retention period.
 * **Manual backups:** You can also create manual backups of your databases. Manual backups are stored in S3.
 
 To restore a database, you can use a snapshot from an automated backup or a manual backup. You can restore the database to the same instance type or to a different instance type.
 
 ### What is Amazon S3 Select?
 
-Amazon S3 Select is a feature that allows you to perform data processing operations on S3 objects without having to download the entire object to your local machine. This can save time and bandwidth, especially when you are processing large objects.
+Amazon S3 Select is a feature that lets you retrieve a subset of data from an S3 object using simple SQL expressions, without downloading the entire object. This can save time and bandwidth, especially when you are processing large objects.
 
-S3 Select supports a variety of data processing operations, including:
-
-* Filtering data
-* Selecting columns
-* Transforming data
-* Projecting data
+Note that AWS closed S3 Select to new customers on July 25, 2024, and it supports a limited subset of SQL (filtering and projecting columns) on one object at a time rather than general-purpose data processing.
 
 ### Explain the features of Amazon EKS (Elastic Kubernetes Service).
 
@@ -1834,9 +1829,9 @@ Amazon Kinesis Data Streams and Kinesis Firehose are both services for ingesting
 
 Kinesis Data Streams is a real-time data streaming service that can be used to ingest and process streaming data from a variety of sources, such as web applications, sensors, and social media feeds. Kinesis Data Streams provides a durable and scalable platform for processing streaming data in real time.
 
-Kinesis Firehose is a near-real-time data ingestion service that can be used to ingest and load data into data lakes, data warehouses, and other analytics destinations. Kinesis Firehose automatically converts and configures data for a variety of destinations.
+Amazon Data Firehose (formerly Amazon Kinesis Data Firehose) is a near-real-time data ingestion service that can be used to ingest and load data into data lakes, data warehouses, and other analytics destinations. It automatically buffers and delivers data; record transformation and format conversion can be enabled when needed.
 
-To choose between Kinesis Data Streams and Kinesis Firehose, you need to consider your specific needs and requirements. If you need to process data in real time, then Kinesis Data Streams is the better choice. If you need to load streaming data into data stores or analytics services, then Kinesis Firehose is the better choice.
+To choose between Kinesis Data Streams and Amazon Data Firehose, you need to consider your specific needs and requirements. If you need to process data in real time, then Kinesis Data Streams is the better choice. If you need to load streaming data into data stores or analytics services, then Amazon Data Firehose is the better choice.
 
 Here are some examples of when to use Kinesis Data Streams:
 
@@ -2111,7 +2106,7 @@ AWS DMS is a service that helps you to migrate your databases to AWS. DMS suppor
 DMS can be used to migrate databases for a variety of reasons, including:
 
 * **To move to a more scalable and reliable platform:** AWS DMS can help you to migrate your databases to AWS, which is a highly scalable and reliable platform.
-* **To reduce costs:** AWS DMS can help you to reduce the cost of running your databases by migrating them to AWS. AWS offers a variety of pricing options for databases, including reserved instances and spot instances.
+* **To reduce costs:** AWS DMS can help you to reduce the cost of running your databases by migrating them to AWS. DMS pricing is based on the replication instances and storage you use, and database discounts such as Reserved Instances or Savings Plans apply to the target databases.
 * **To improve performance:** AWS DMS can help you to improve the performance of your databases by migrating them to AWS. AWS offers a variety of high-performance database services, such as Amazon Aurora and Amazon RDS.
 
 ### What is AWS Chime, and how does it facilitate video conferencing?
