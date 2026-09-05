@@ -1299,7 +1299,7 @@ CloudWatch can be used to monitor a variety of things, such as CPU utilization, 
 
 Elastic Load Balancing (ELB) is a service that distributes traffic across multiple AWS resources, such as EC2 instances, Auto Scaling groups, and containers. ELB helps to improve the performance, availability, and scalability of web applications.
 
-ELB can be used to distribute traffic across multiple AZs in a region, or across multiple regions. ELB also provides features such as health checks, sticky sessions, and automatic scaling to help customers to manage their traffic load.
+ELB can be used to distribute traffic across multiple AZs in a region; for routing across multiple regions, services such as AWS Global Accelerator or Route 53 are used. ELB also provides features such as health checks, sticky sessions, and automatic scaling to help customers to manage their traffic load.
 
 ### What is Amazon Elastic Beanstalk, and how does it work?
 
@@ -1402,7 +1402,7 @@ AWS offers a variety of data encryption features to help you to protect your dat
 
 **Data encryption in transit** means that your data is encrypted when it is transmitted over the network. AWS uses a variety of protocols, such as HTTPS and TLS, to encrypt your data in transit.
 
-You can also use your own encryption keys to encrypt your data at rest and in transit. This is known as customer managed encryption (CME). CME gives you complete control over the encryption of your data.
+You can also use your own encryption keys to encrypt your data at rest and in transit. This is known as using customer managed keys (CMKs) in AWS KMS. CMKs give you control over key policies, aliases, and usage, subject to IAM permissions and KMS safeguards.
 
 ### Explain the significance of Amazon Route 53.
 
@@ -1511,7 +1511,7 @@ Some of the benefits of using AWS CloudTrail include:
 
 AWS Elastic Load Balancing (ELB) is a service that distributes traffic across multiple AWS resources, such as EC2 instances, Auto Scaling groups, and containers. ELB helps to improve the performance, availability, and scalability of web applications.
 
-ELB can be used to distribute traffic across multiple AZs in a region, or across multiple regions. ELB also provides features such as health checks, sticky sessions, and automatic scaling to help customers to manage their traffic load.
+ELB can be used to distribute traffic across multiple AZs in a region; for routing across multiple regions, services such as AWS Global Accelerator or Route 53 are used. ELB also provides features such as health checks, sticky sessions, and automatic scaling to help customers to manage their traffic load.
 
 ### How do you optimize costs in AWS?
 
@@ -1634,7 +1634,7 @@ Once you have created a SAM template, you can deploy your application using the 
 
 AWS Key Management Service (KMS) is a managed service that makes it easy to create and control the cryptographic keys that are used to protect your data. KMS uses hardware security modules (HSMs) validated at FIPS 140-3 Security Level 3 under the Cryptographic Module Validation Program to protect and validate your AWS KMS keys.
 
-KMS plays a crucial role in encryption by providing a centralized and secure way to manage encryption keys. This helps to ensure that your data is always encrypted at rest and in transit, and that only authorized users have access to your encryption keys.
+KMS plays a crucial role in encryption by providing a centralized and secure way to manage encryption keys. Each AWS service and application must be configured to use KMS keys, so encryption at rest and in transit depends on that configuration, with key access controlled through key policies and IAM.
 
 KMS can be used to encrypt a variety of data types, including:
 
@@ -1659,7 +1659,7 @@ The DLQ can be used to monitor for Lambda function errors and to retry failed ev
 
 AWS WAF is a web application firewall that helps to protect your web applications from common attack vectors, such as SQL injection, cross-site scripting (XSS), and denial of service (DoS) attacks.
 
-WAF works by inspecting incoming HTTP and HTTPS traffic and filtering out malicious requests. WAF can be configured to protect specific web applications or to protect all web applications in a VPC.
+WAF works by inspecting incoming HTTP and HTTPS traffic and filtering out malicious requests. You associate a web ACL with supported resources, such as CloudFront distributions, API Gateway APIs, Application Load Balancers, App Sync, or App Runner services.
 
 ### What is AWS Glue, and how is it used for data transformation?
 
@@ -1677,7 +1677,7 @@ AWS Shield is a managed DDoS protection service that protects your web applicati
 * **Shield Standard:** Shield Standard is included with all AWS accounts and provides basic protection against DDoS attacks.
 * **Shield Advanced:** Shield Advanced is a paid service that provides advanced protection against DDoS attacks.
 
-Shield works by monitoring your traffic and filtering out malicious traffic. Shield can also scale your infrastructure to handle increased traffic during a DDoS attack.
+Shield works by monitoring your traffic and filtering out malicious traffic. Scaling your infrastructure to absorb legitimate traffic during an attack is handled separately, for example with Auto Scaling.
 
 ### Describe AWS CodeCommit, CodeBuild, and CodeDeploy.
 
@@ -1867,7 +1867,7 @@ Some common use cases for AWS Greengrass include:
 
 ### What is AWS Global Accelerator, and when is it used?
 
-AWS Global Accelerator is a service that improves the performance and availability of your global applications. It does this by routing traffic to the closest regional edge cache. This can reduce latency and improve availability for users around the world.
+AWS Global Accelerator is a service that improves the performance and availability of your global applications. It routes user traffic over the AWS global network to the nearest healthy endpoint in your endpoint groups, which can reduce latency and improve availability for users around the world.
 
 Global Accelerator is a good choice for applications that need to be highly available and performant for users around the world. It is also a good choice for applications that have a lot of dynamic content, such as streaming video and live events.
 
@@ -1935,7 +1935,7 @@ AWS Artifact enhances compliance and security in a number of ways.
 
 **Compliance**
 
-* AWS Artifact provides a central repository for all of your AWS security and compliance documents. This makes it easy to find and access the documents you need when preparing for audits or generating compliance reports.
+* AWS Artifact provides on-demand access to AWS security and compliance reports, such as SOC and ISO reports, as well as compliance agreements. This makes it easy to find and access the documents you need when preparing for audits.
 * AWS Artifact provides a variety of reports that can help you demonstrate compliance with specific AWS services and regulations.
 * AWS Artifact makes it easy to track the status of your AWS agreements, such as the Business Associate Addendum (BAA). This can help you ensure that you are always in compliance with your AWS agreements.
 
@@ -1955,7 +1955,7 @@ AWS Artifact is a powerful tool that can help AWS customers of all sizes enhance
 
 ### What is AWS PrivateLink, and how does it improve network security?
 
-AWS PrivateLink is a service that allows you to securely connect your VPC to AWS services and other VPCs without using the public internet. PrivateLink connections are private and encrypted, which helps to protect your data from unauthorized access.
+AWS PrivateLink is a service that allows you to securely connect your VPC to AWS services and other VPCs without using the public internet. PrivateLink traffic stays on the AWS network; for end-to-end protection of application payloads, use TLS or another application-level encryption.
 
 PrivateLink improves network security by providing a private and encrypted way to connect your VPC to AWS services and other VPCs. This helps to reduce the risk of data breaches and other security attacks.
 
@@ -1972,7 +1972,7 @@ Greengrass Core can be used in a variety of ways, including:
 
 ### How do you set up AWS Single Sign-On (SSO)?
 
-To set up AWS SSO, you will need to create an AWS SSO account and configure your applications to use AWS SSO for authentication. You will also need to assign users and groups to roles in AWS SSO.
+To set up AWS IAM Identity Center (the successor to AWS SSO), you enable it in your organization, connect your identity source, and then assign users and groups to accounts and applications through permission sets.
 
 Once you have configured AWS SSO, you can enable users to log in to your applications using their AWS SSO credentials.
 
@@ -2010,7 +2010,7 @@ CDK can be used by a variety of developers, including:
 
 There are two main ways to implement cross-account access in AWS:
 
-1. **Role-based access control (RBAC):** RBAC allows you to grant permissions to users and roles in other AWS accounts. To do this, you create a role in your account and then grant the role permissions to access resources in other accounts.
+1. **Role-based access control (RBAC):** RBAC allows users in one AWS account to access resources in another account. You create a role in the target account with a trust policy that allows the source principal to assume it, and then grant the source identity permission to assume that role.
 2. **Resource-based policies:** Resource-based policies allow you to specify who can access specific resources in your account. To do this, you attach a resource-based policy to the resource that you want to share.
 
 ### Explain the difference between Amazon Kinesis Data Streams and Kinesis Data Analytics.
@@ -2087,15 +2087,15 @@ Elastic Transcoder can be used to encode media files for delivery on websites, m
 
 ### What is AWS Transit Gateway Network Manager?
 
-AWS Transit Gateway Network Manager is a service that helps you to manage and visualize your AWS Transit Gateway networks. Transit Gateway Network Manager provides a number of features to help you manage your Transit Gateway networks, including:
+AWS Transit Gateway Network Manager (part of AWS Network Manager) helps you to manage and visualize your AWS Transit Gateway networks. It provides a number of features to help you manage your Transit Gateway networks, including:
 
 * **Network topology visualization:** Transit Gateway Network Manager provides a graphical view of your Transit Gateway network topology. This helps you to understand how your network is connected and to identify potential problems.
-* **Route management:** Transit Gateway Network Manager allows you to manage the routes in your Transit Gateway network. This helps you to control the flow of traffic in your network.
+* **Route analysis:** Transit Gateway Network Manager includes a Route Analyzer that helps you analyze the routes in your Transit Gateway route tables. This helps you to understand and troubleshoot the flow of traffic in your network.
 * **Monitoring and alerts:** Transit Gateway Network Manager monitors your Transit Gateway network and sends you alerts if there are any problems.
 
 ### How does AWS PrivateLink work with service endpoints?
 
-AWS PrivateLink works with service endpoints to provide a private and secure way to connect your VPC to AWS services. Service endpoints are dedicated network interfaces that allow you to connect to AWS services without using the public internet.
+AWS PrivateLink works with interface VPC endpoints to provide a private and secure way to connect your VPC to AWS services. Interface endpoints are elastic network interfaces powered by PrivateLink that allow you to connect to AWS services without using the public internet; gateway endpoints, by contrast, use route table entries for S3 and DynamoDB.
 
 When you create a service endpoint, you can choose to enable PrivateLink. If you enable PrivateLink, AWS will create a private connection between your VPC and the AWS service. This connection is isolated from the public internet and is only accessible to resources in your VPC.
 
