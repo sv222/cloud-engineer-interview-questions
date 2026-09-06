@@ -1703,12 +1703,12 @@ Together, CodeCommit, CodeBuild, and CodeDeploy form a powerful continuous integ
 
 To implement disaster recovery in AWS, you can follow these steps:
 
-1. **Define your recovery time objective (RTO) and recovery point objective (RPO).** The RTO is the maximum amount of time that your applications can be unavailable after a disaster. The RPO is the maximum amount of data that can be lost after a disaster.
-2. **Choose a disaster recovery strategy.** There are two main disaster recovery strategies: active/passive and pilot light. In an active/passive strategy, you maintain a duplicate copy of your production environment in a separate AWS Region. In a pilot light strategy, you maintain a minimal copy of your production environment in a separate AWS Region.
+1. **Define your recovery time objective (RTO) and recovery point objective (RPO).** The RTO is the maximum amount of time that your applications can be unavailable after a disaster. The RPO is the maximum acceptable amount of time since the last data recovery point, in other words how much data you can afford to lose.
+2. **Choose a disaster recovery strategy.** The commonly used strategies are backup and restore, pilot light, warm standby, and multi-site active/active. They differ in how much of your environment is kept running in a second Region, and in their relative cost and recovery time.
 3. **Implement your disaster recovery strategy.** There are a number of AWS services that can help you implement your disaster recovery strategy, such as:
 * AWS Elastic Disaster Recovery (DRS): DRS is a managed service that helps you recover your on-premises or cloud-based applications to AWS quickly and easily.
 * AWS Backup: AWS Backup is a fully managed backup service that helps you protect your data across AWS services.
-* AWS Disaster Recovery Service: AWS Disaster Recovery Service is a managed service that helps you copy your data to a secondary AWS Region for disaster recovery.
+* AWS Elastic Disaster Recovery (AWS DRS): a managed service that keeps your applications available by continuously replicating servers to AWS, allowing fast recovery into a secondary Region. AWS Backup complements it with centralized backup management.
 * AWS CloudFormation: AWS CloudFormation is a managed service that helps you model and provision AWS resources in a consistent and repeatable way.
 4. **Test your disaster recovery plan.** It is important to test your disaster recovery plan regularly to ensure that it works as expected.
 
@@ -1743,7 +1743,7 @@ To create a custom AMI, you can use the AWS Systems Manager (SSM) Image Builder 
 
 SSM Image Builder also provides a number of features that make it easy to create custom AMIs, such as:
 
-* **Recipes:** Recipes are scripts that can be used to customize AMIs.
+* **Recipes:** Recipes define the base image, components, and build configuration for an AMI; components contain the customization scripts.
 * **Components:** Components are software packages that can be installed on AMIs.
 * **Configuration:** Configuration can be used to customize AMIs, such as setting the AMI's name and description.
 
@@ -1797,7 +1797,7 @@ AWS Systems Manager is a service that helps you to manage your AWS resources. Sy
 
 ### What is the AWS Snowball Edge device?
 
-AWS Snowball Edge is a device that can be used to transfer data to and from AWS. Snowball Edge is a good option for transferring large amounts of data, such as data for migration or disaster recovery.
+AWS Snowball Edge is a device that can be used to transfer data to and from AWS. Note that AWS closed Snowball Edge to new customers in November 2025 and the service is in maintenance mode, so existing users should plan migrations to services such as AWS DataSync or AWS Data Transfer Terminal.
 
 Snowball Edge is also a good option for running edge computing applications. Edge computing applications are applications that are run on devices that are located close to the data source. This can reduce latency and improve performance.
 
@@ -2021,7 +2021,7 @@ Amazon Kinesis Data Analytics is a fully managed service that makes it easy to p
 
 ### What is AWS Snowmobile, and when is it used?
 
-AWS Snowmobile is a petabyte-scale data transfer service. Snowmobile is a ruggedized device that can be used to transfer large amounts of data to and from AWS. Snowmobile is a good choice for transferring large amounts of data, such as data for migration or disaster recovery.
+AWS Snowmobile was a petabyte-scale data transfer service that moved exabyte-scale data volumes in shipping containers. AWS retired Snowmobile in 2024; use AWS Snowball Edge or AWS DataSync for large data transfers instead.
 
 ### How do you use AWS Elastic Beanstalk with Docker containers?
 
@@ -2038,7 +2038,7 @@ AWS Control Tower is a service that helps you to set up and govern a secure, mul
 
 ### What is the AWS Partner Network (APN), and how does it support customers?
 
-The AWS Partner Network (APN) is a global community of partners that leverage programs, expertise, and resources to build, market, and sell customer offerings. This diverse network features 100,000 partners from more than 150 countries.
+The AWS Partner Network (APN) is a global community of partners that leverage programs, expertise, and resources to build, market, and sell customer offerings. This diverse network features more than 130,000 partners from over 200 countries.
 
 The APN supports customers in a variety of ways, including:
 
@@ -2072,7 +2072,7 @@ Once you have created a CloudFront distribution, you can configure the distribut
 
 ### What is AWS OpsWorks, and how does it automate infrastructure management?
 
-AWS OpsWorks is a service that helps you to automate the deployment and management of your applications. OpsWorks provides a variety of features to help you manage your applications, including:
+AWS OpsWorks helped you automate the deployment and management of your applications with configuration-management tools. Note that AWS retired OpsWorks in 2024 (OpsWorks Stacks on May 26, 2024, Chef Automate on May 5, 2024, and Puppet Enterprise on March 31, 2024), and recommends AWS Systems Manager for ongoing management:
 
 * **Automatic deployment:** OpsWorks can automatically deploy your applications to AWS.
 * **Stack management:** OpsWorks allows you to manage your applications as stacks. A stack is a collection of AWS resources that are used to run your application.
@@ -2081,7 +2081,7 @@ AWS OpsWorks is a service that helps you to automate the deployment and manageme
 
 ### Explain the AWS Elastic Transcoder service.
 
-AWS Elastic Transcoder is a service that encodes media files for delivery across a variety of devices and platforms. Elastic Transcoder supports a variety of input and output formats, including MP4, HLS, and MPEG-DASH.
+AWS Elastic Transcoder was a service that encoded media files for delivery across a variety of devices and platforms, supporting formats such as MP4, HLS, and MPEG-DASH. AWS discontinued Elastic Transcoder on November 13, 2025, and recommends AWS Elemental MediaConvert for transcoding workloads.
 
 Elastic Transcoder can be used to encode media files for delivery on websites, mobile devices, and streaming devices. Elastic Transcoder can also be used to encode media files for long-term storage.
 
@@ -2111,7 +2111,7 @@ DMS can be used to migrate databases for a variety of reasons, including:
 
 ### What is AWS Chime, and how does it facilitate video conferencing?
 
-AWS Chime is a unified communications service that provides voice, video, messaging, and screen sharing capabilities. Chime can be used to create video conferencing meetings and webinars.
+Amazon Chime was a unified communications service that provided voice, video, messaging, and screen sharing capabilities. AWS ended support for the Amazon Chime service on February 20, 2026; the Amazon Chime SDK remains available for building custom meeting applications.
 
 Chime facilitates video conferencing by providing a number of features, including:
 
@@ -2127,17 +2127,16 @@ To consolidate billing with AWS Organizations, you must create an organization a
 
 To create a consolidated bill, follow these steps:
 
-1. Open the AWS Organizations console.
-2. In the navigation pane, choose **Bills**.
-3. Choose **Create consolidated bill**.
-4. Choose the accounts that you want to include in the consolidated bill.
-5. Choose **Create consolidated bill**.
+1. In the AWS Billing and Cost Management console, choose **Consolidated Billing**.
+2. Choose **Get started** and sign in to the Organizations console.
+3. Create an organization and invite the AWS accounts you want to include.
+4. Accept the invitations from each account.
 
-Once you have created a consolidated bill, you will be able to view and download the bill from the AWS Organizations console.
+Once the accounts have joined the organization, their usage is combined into a single bill that you can view and download from the AWS Billing and Cost Management console.
 
 ### What is Amazon Polly, and how does it convert text to speech?
 
-Amazon Polly is a cloud service that converts text to speech. It uses deep learning technologies to synthesize natural-sounding human speech. Polly supports a variety of languages and voices, and it can be used to create a variety of speech outputs, such as MP3 files, WAVE files, and SSML streams.
+Amazon Polly is a cloud service that converts text to speech. It uses deep learning technologies to synthesize natural-sounding human speech. Polly supports a variety of languages and voices, and it can produce audio in formats such as MP3, Ogg Vorbis, and PCM; SSML can be used as input markup to control how the text is spoken.
 
 #### How Amazon Polly converts text to speech
 
@@ -2157,7 +2156,7 @@ To use AWS EventBridge, you first need to create an event rule. An event rule sp
 
 ### How do you use AWS Data Pipeline for data integration?
 
-AWS Data Pipeline is a service that helps you to integrate data from multiple sources. Data Pipeline can move data between different AWS services, such as Amazon S3, Amazon Redshift, and Amazon DynamoDB. Data Pipeline can also move data between AWS services and on-premises systems.
+AWS Data Pipeline helped orchestrate data-driven workflows between AWS services such as Amazon S3, Amazon Redshift, and Amazon DynamoDB, as well as on-premises systems. The service is now in maintenance mode and closed to new customers, so new workloads should use AWS Glue, Amazon MWAA, or AWS Step Functions instead.
 
 To use AWS Data Pipeline for data integration, you first need to create a pipeline definition. A pipeline definition specifies the data sources, data destinations, and data processing steps for your pipeline. Once you have created a pipeline definition, you can start the pipeline. Data Pipeline will then start moving data between the data sources and data destinations that you specified in the pipeline definition.
 
