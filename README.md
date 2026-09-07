@@ -2185,7 +2185,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **Amazon Simple Storage Service (S3):** Object storage service for storing and retrieving data.
 - **Amazon Elastic Block Store (EBS):** Block storage service for EC2 instances.
 - **Amazon Elastic File System (EFS):** A fully managed, scalable file system for use with Amazon Web Services (AWS) cloud services and on-premises resources.
-- **Amazon Glacier:** Low-cost storage service for archival data.
+- **Amazon S3 Glacier:** Low-cost archival storage classes of Amazon S3 for long-term data archiving (S3 Glacier Flexible Retrieval and S3 Glacier Deep Archive).
 - **Amazon S3 File Gateway** enables you to store file data as objects in Amazon S3 cloud storage for data lakes, backups, and ML workflows.
 
 ### Databases
@@ -2197,7 +2197,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **Amazon Redshift:** A fully managed, petabyte-scale data warehouse service in the cloud, designed to handle large analytical workloads with high performance and scalability. Redshift is built on top of massively parallel processing (MPP) technology, which allows it to distribute queries across multiple nodes to process data in parallel.
 - **Amazon DynamoDB:** A fully managed, serverless, key-value and document database service that provides single-digit millisecond performance at any scale.
 - **Amazon DynamoDB Accelerator (DAX):** A fully managed, highly available, in-memory cache for DynamoDB that delivers up to 10x performance improvement.
-- **Amazon DocumentDB:** Fully managed, scalable, highly available, and durable document database that is fully compatible with MongoDB.
+- **Amazon DocumentDB:** Fully managed, scalable, highly available, and durable document database that supports MongoDB workloads.
 - **Amazon Keyspaces (for Apache Cassandra):** A scalable, highly available, and managed Apache Cassandra–compatible database service.
 
 ### Networking
@@ -2208,34 +2208,27 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **Amazon Route 53:** Scalable and highly available Domain Name System (DNS) web service.
 - **AWS Direct Connect:** A dedicated network connection from your on-premises data center to AWS.
 - **AWS Transit Gateway:** Service for connecting multiple VPCs and on-premises networks.
-- **AWS VPN CloudHub:** A managed service that allows you to connect multiple AWS Virtual Private Clouds (VPCs) to each other and to your on-premises network via a hub-and-spoke model.
+- **AWS VPN CloudHub:** A hub-and-spoke model that connects multiple on-premises sites through a virtual private gateway over Site-to-Site VPN connections, allowing remote offices to communicate with each other and with AWS.
 - **AWS Transit Gateway Peering:** A service that allows you to connect two or more AWS Transit Gateways together.
 - **AWS Transit Gateway Network Manager:** A service that provides a unified view of your AWS Transit Gateway networks and helps you manage them centrally.
 - **AWS Global Accelerator:** Improve application availability and performance using the AWS global network.
 - **AWS PrivateLink:** A secure way to connect two services that are running in a virtual private cloud (VPC) or on-premises network to services running in AWS.
 - **AWS Client VPN:** Managed VPN for secure remote access to AWS and on-premises resources, allows to connect your devices to your AWS account over a secure encrypted tunnel.
-- **AWS VPC endpoints:** are network interfaces that allow resources in a VPC to communicate with AWS services without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection.
+- **AWS VPC endpoints:** allow resources in a VPC to connect to AWS services without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection. Interface endpoints are elastic network interfaces powered by AWS PrivateLink; gateway endpoints are route table targets for Amazon S3 and DynamoDB.
 
 ### Content Delivery
 
 - **Amazon CloudFront:** Content delivery network (CDN) for fast content delivery.
-- **Amazon CloudFront Origin Access Identity (OAI):** An OAI is a special CloudFront user that you can associate with Amazon S3 origins, so that you can secure all or just some of your Amazon S3 content. OAIs can be used to restrict access to specific objects or buckets in Amazon S3, or to specific IP addresses or ranges.
-- **Amazon CloudFront Origin Domain Name (ODN):** An ODN is a unique domain name that is assigned to your CloudFront distribution when you create it. The ODN is used to route requests for your content to CloudFront.
+- **Amazon CloudFront Origin Access Control (OAC):** OAC (the successor to Origin Access Identity) restricts access to an Amazon S3 origin so that content can only be served through the associated CloudFront distribution.
 - **Amazon CloudFront Signed URL:** A CloudFront signed URL is a URL that has been signed with a CloudFront signing key. This type of URL is used to restrict access to specific objects in CloudFront.
-- **Amazon CloudFront Function:** A CloudFront function is a Lambda function that can be used to modify or filter the content that is delivered by CloudFront.
-- **Amazon CloudFront Viewer Request Header:** A CloudFront viewer request header is a header that is added to requests that are sent to CloudFront. Viewer request headers can be used to provide additional information to CloudFront, such as the user's IP address or the device that is being used to access the content.
-- **Amazon CloudFront Viewer Response Header:** A CloudFront viewer response header is a header that is added to responses that are sent from CloudFront. Viewer response headers can be used to provide additional information to the viewer, such as the cache status of the content or the size of the content.
+- **CloudFront Function:** A lightweight, JavaScript-only edge function that can modify or filter content at CloudFront edge locations; distinct from Lambda@Edge, which runs full Lambda functions.
 - **Amazon CloudFront Distribution:** A CloudFront distribution is a collection of resources that are delivered to viewers by CloudFront. A distribution can include one or more origins, such as Amazon S3 buckets or Amazon EC2 instances.
 - **Amazon CloudFront Edge Location:** A CloudFront edge location is a server that is located around the world. Edge locations are used to cache content and deliver it to viewers with low latency.
-- **Amazon CloudFront Shield:** CloudFront Shield is a managed DDoS protection service that protects your CloudFront distributions from DDoS attacks.
-- **Amazon CloudFront Streaming Delivery:** CloudFront Streaming Delivery is a service that allows you to stream video and audio content to viewers with low latency and high transfer speeds.
-- **Amazon CloudFront API Acceleration:** CloudFront API Acceleration is a service that allows you to accelerate your APIs by caching responses and routing requests to the closest edge location.
-- **Amazon CloudFront Streaming:** A service that delivers live and on-demand video to viewers around the world.
 
 ### Messaging
 
 - **Amazon Simple Notification Service (SNS):** Pub/sub messaging service for sending messages and notifications.
-- **Amazon Pinpoint:** A multichannel messaging service that makes it easy to engage with your customers across a variety of channels, including SMS, email, push notifications, and in-app messages.
+- **Amazon Pinpoint:** A multichannel messaging service for engaging customers across SMS, email, push notifications, and in-app messages. AWS closed Pinpoint to new customers in May 2025, and its engagement features reach end of support on October 30, 2026 (replacements include AWS End User Messaging, Amazon SES, and Amazon Connect).
 
 ### Queuing
 
@@ -2286,7 +2279,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **Amazon CloudWatch:** A monitoring and observability service that collects logs, metrics, and events to provide data and actionable insights to help you monitor your applications, infrastructure, and services.
 - **Amazon CloudTrail:** A service that helps you track and audit user activity and API usage across your AWS resources.
 - **AWS Systems Manager:** A collection of services and features that helps automate management of your AWS resources, including patch management, configuration management, fleet inventory, run command, and maintenance window.
-- **AWS OpsWorks:** A service that makes it easy to deploy, manage, and scale server-based applications, supports Puppet and Chef.
+- **AWS OpsWorks:** A configuration-management service for Chef and Puppet that AWS retired in 2024; AWS Systems Manager is the recommended replacement.
 - **AWS Config:** Configuration management service for assessing, auditing, and evaluating resources.
 - **AWS Systems Manager Automation:** Service for automating operational tasks.
 - **AWS Systems Manager Patch Manager:** Automate patch management for your instances.
@@ -2295,13 +2288,11 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **AWS Systems Manager Automation Runbook Designer:** Service for creating automation runbooks.
 - **Amazon DevOps Guru:** ML-powered service to improve application availability.
 - **AWS Control Tower:** A managed service that helps you set up and govern a secure, multi-account AWS environment.
-- **AWS Artifact Registry:** A fully managed artifact management service that allows you to store, manage, and deploy software packages.
 
 ### Security and Compliance
 
 - **Amazon GuardDuty:** An intelligent security service that uses machine learning to continuously monitor your AWS accounts and workloads for malicious activity and unauthorized behavior.
 - **AWS Audit Manager:** Service for simplifying and automating compliance audits.
-- **AWS Compliance Manager:** Service for managing compliance programs.
 - **AWS Security Hub:** Service for security and compliance.
 - **AWS Shield:** Managed Distributed Denial of Service (DDoS) protection.
 - **AWS WAF:** Web Application Firewall for protecting web applications.
@@ -2322,9 +2313,9 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 ### Containers and Kubernetes
 
 - **Amazon Elastic Container Service (ECS):** Container orchestration service.
-- **Amazon Elastic Container Service for Kubernetes (EKS):** Managed Kubernetes service for container orchestration.
-- **Amazon Elastic Kubernetes Service Anywhere (EKS Anywhere):** Run containers on your own infrastructure.
-- **Amazon Elastic Container Service for Kubernetes Fargate (EKS-Fargate):** Serverless Kubernetes service.
+- **Amazon Elastic Kubernetes Service (EKS):** Managed Kubernetes service for container orchestration.
+- **Amazon EKS Anywhere:** Run Kubernetes clusters on your own infrastructure.
+- **Amazon EKS with Fargate:** Run Kubernetes pods on serverless Fargate compute.
 - **AWS App Runner:** Service for building and running containerized applications.
 - **AWS App Mesh:** Service mesh for microservices.
 - **AWS Fargate Spot:** Serverless compute engine using spare capacity.
@@ -2369,14 +2360,14 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **AWS Outposts:** Extend AWS infrastructure and services to your data center.
 - **AWS Wavelength:** Deploy applications that require ultra low latency to mobile devices.
 - **AWS Local Zones:** AWS infrastructure and services close to large population centers.
-- **AWS Snow Family:** Physically transport up to 100PB of data into and out of AWS.
+- **AWS Snow Family:** Physically transport large amounts of data into and out of AWS; Snowball Edge devices move terabytes to petabytes per job.
 - **AWS Greengrass:** Build, deploy, and manage IoT applications at the edge.
 - **AWS IoT Greengrass ML Inference:** Perform machine learning inference on edge devices.
 
 ### Operations
 
-- **AWS Artifact:** A service that helps you store, manage, and share your AWS configuration and infrastructure as code.
-- **AWS Trusted Advisor:** A service that automates AWS auditing and compliance, providing pre-built rules and tests to assess your environment against industry standards, best practices, and your own policies.
+- **AWS Artifact:** A self-service portal for on-demand access to AWS compliance reports and agreements, such as SOC and ISO reports and the HIPAA business associate agreement.
+- **AWS Trusted Advisor:** An online service that scans your environment and gives real-time recommendations across cost optimization, performance, security, fault tolerance, and service limits.
 - **AWS Well-Architected Tool:** Review and improve your cloud architectures.
 - **AWS Resilience Hub:** Prepare your business for disruptions and uncertainties.
 - **Amazon DevOps Guru:** Improve application availability with ML.
@@ -2412,10 +2403,10 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 
 ### Analytics & Big Data
 
-- **Amazon Elasticsearch Service:** Managed Elasticsearch service for log analytics and real-time application monitoring.
+- **Amazon OpenSearch Service:** Managed service for deploying and operating OpenSearch and OpenSearch Dashboards (formerly Amazon Elasticsearch Service).
 - **Amazon Kinesis:** Real-time data streaming service for ingesting and processing large streams of data.
-- **Amazon Kinesis Streams:** A real-time data streaming service that can process millions of records per second.
-- **Amazon Kinesis Firehose:** A fully managed service that delivers real-time streaming data to Amazon S3, Amazon Redshift, Amazon Elasticsearch Service, or Splunk.
+- **Amazon Kinesis Data Streams:** A real-time data streaming service that can process millions of records per second.
+- **Amazon Data Firehose:** A fully managed service that delivers real-time streaming data to Amazon S3, Amazon Redshift, Amazon OpenSearch Service, Splunk, and supported HTTP endpoints (formerly Amazon Kinesis Data Firehose).
 - **Amazon EMR:** Managed Hadoop framework for big data processing and analysis.
 
 ### Customer Engagement
@@ -2443,7 +2434,7 @@ AWS CodeGuru provides a number of features to help you improve the quality of yo
 - **AWS Application Discovery Service (ADS):** A service that discovers applications running on your on-premises infrastructure, used to discover your on-premises applications and collect data about their dependencies, relationships, and usage patterns.
 - **Amazon Database Migration Service (DMS):** A service that helps you migrate databases from on-premises to AWS or from one AWS database service to another.
 - **AWS Application Migration Service (MGN):** Lift-and-shift applications to AWS with minimal downtime.
-- **AWS Server Migration Service (SMS):** Migrate physical and virtual servers to AWS without downtime.
+- **AWS Server Migration Service (SMS):** AWS discontinued SMS in March 2022; its successor, AWS Application Migration Service (MGN, now AWS Transform MGN), automates lift-and-shift migrations with minimal downtime.
 - **AWS Snowball:** Transfer large amounts of data to and from AWS using secure devices.
 
 ## Microsoft Azure Interview Questions
