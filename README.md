@@ -1565,7 +1565,7 @@ CodePipeline consists of the following components:
 
 AWS DataSync is a service that helps you to automate the transfer of data between on-premises storage systems and AWS storage services. DataSync supports a variety of on-premises storage systems, including NAS, SAN, and cloud storage. DataSync also supports a variety of AWS storage services, including S3, EFS, and FSx.
 
-DataSync works by creating a replication task. A replication task defines the source and destination for the data transfer, and the schedule for the transfer. DataSync then monitors the source for changes and transfers the changes to the destination.
+DataSync works by creating a task that defines the source location, the destination location, and the configuration and schedule for the transfer. Each task execution copies the data you specify; recurring executions can be scheduled, but DataSync does not continuously monitor the source for changes.
 
 ### Explain the concept of AWS Auto Scaling.
 
@@ -1653,7 +1653,7 @@ The AWS Lambda Dead Letter Queue (DLQ) is a queue where Lambda sends events that
 * The Lambda function returns an error.
 * The Lambda function times out.
 
-The DLQ can be used to monitor for Lambda function errors and to retry failed events.
+When a function is invoked asynchronously, Lambda retries failed events a set number of times, and the DLQ receives the events after those retries are exhausted so you can inspect and reprocess them.
 
 ### How does AWS WAF (Web Application Firewall) work?
 
@@ -2017,7 +2017,7 @@ There are two main ways to implement cross-account access in AWS:
 
 Amazon Kinesis Data Streams is a real-time data streaming service that allows you to ingest and process streaming data from a variety of sources, such as web applications, sensors, and social media feeds. Kinesis Data Streams provides a durable and scalable platform for processing streaming data in real time.
 
-Amazon Kinesis Data Analytics is a fully managed service that makes it easy to process and analyze streaming data. Kinesis Data Analytics provides a number of SQL- and Java-based APIs that can be used to process and analyze streaming data.
+Amazon Kinesis Data Analytics was a fully managed service for processing and analyzing streaming data with SQL and Java (Apache Flink). AWS ended support for the SQL variant on January 27, 2026; the current service is Amazon Managed Service for Apache Flink.
 
 ### What is AWS Snowmobile, and when is it used?
 
@@ -2066,9 +2066,8 @@ Once you have created a CloudFront distribution, you can configure the distribut
 3. Choose the distribution that you want to configure.
 4. In the **Distribution Settings** tab, choose **Edit**.
 5. In the **SSL Certificate** section, choose **Custom SSL certificate**.
-6. Choose **Upload your own certificate**.
-7. Upload your private key and certificate file.
-8. Choose **Save**.
+6. Choose a certificate from **AWS Certificate Manager (ACM)** or the IAM certificates store. Note that ACM certificates used with CloudFront must be requested or imported in the us-east-1 Region.
+7. Choose **Save**.
 
 ### What is AWS OpsWorks, and how does it automate infrastructure management?
 
