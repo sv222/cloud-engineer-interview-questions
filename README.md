@@ -2450,7 +2450,7 @@ Azure Resource Manager (ARM) is a RESTful API and a deployment and management se
 
 4. Describe the differences between Azure IaaS, PaaS, and SaaS.
 5. How does Azure Virtual Network work, and what are its components?
-6. What is Azure Active Directory (Azure AD), and how is it used?
+6. What is Microsoft Entra ID (formerly Azure Active Directory), and how is it used?
 7. Explain Azure App Service and its use cases.
 8. How does Azure Storage work, and what are its types?
 9. Describe Azure SQL Database and its features.
@@ -2461,7 +2461,7 @@ Azure Resource Manager (ARM) is a RESTful API and a deployment and management se
 14. Describe Azure Cosmos DB and its global distribution features.
 15. How do you optimize costs in Azure?
 16. What is Azure Logic Apps, and how are workflows created?
-17. Explain the concept of Azure Security Center and its role in security management.
+17. Explain the concept of Microsoft Defender for Cloud (formerly Azure Security Center) and its role in security management.
 18. How do you implement high availability in Azure?
 19. What is Azure CDN (Content Delivery Network), and when is it used?
 20. Describe the benefits of Azure Functions for event-driven applications.
@@ -2478,7 +2478,7 @@ Azure Resource Manager (ARM) is a RESTful API and a deployment and management se
 31. How does Azure Virtual WAN enhance network connectivity?
 32. Describe Azure API Management and its role in API governance.
 33. What is Azure Data Lake Storage, and how does it handle big data?
-34. How do you set up Azure AD for single sign-on (SSO)?
+34. How do you set up Microsoft Entra ID for single sign-on (SSO)?
 35. What is Azure Synapse Analytics, and how does it enable analytics at scale?
 36. Explain the features of Azure Event Grid for event-driven architectures.
 37. How do you manage Azure resources using Azure PowerShell?
@@ -2503,10 +2503,10 @@ Azure Resource Manager (ARM) is a RESTful API and a deployment and management se
 56. How do you achieve cross-region and cross-cloud redundancy in Azure?
 57. What is Azure Front Door, and how does it optimize global application delivery?
 58. Describe the use of Azure Logic Apps and Power Automate for workflow automation.
-59. How do you use Azure AD B2B and B2C for identity management?
+59. How do you use Microsoft Entra External ID (B2B and B2C) for identity management?
 60. What is Azure Backup, and how does it work for data protection?
 61. Explain Azure Confidential Computing and its security benefits.
-62. How do you set up Azure AD multi-factor authentication (MFA)?
+62. How do you set up Microsoft Entra ID multi-factor authentication (MFA)?
 63. What is Azure Quantum, and how does it enable quantum computing solutions?
 64. Describe the benefits of Azure Stack for hybrid cloud deployments.
 65. How does Azure Data Explorer (ADX) enable data exploration and analysis?
@@ -2575,7 +2575,7 @@ Azure Resource Manager (ARM) is a RESTful API and a deployment and management se
 25. Explain Google Cloud Spanner and its features for distributed databases.
 26. How do you secure data in Google Cloud Storage and Google Cloud SQL?
 27. What is Google Cloud Run, and how does it enable containerized applications?
-28. Describe the concept of Google Cloud Datalab for data exploration and analysis.
+28. Describe the concept of Vertex AI Workbench (formerly Cloud Datalab) for data exploration and analysis.
 29. How does Google Cloud Composer work for managing workflows?
 30. What is Google Cloud Filestore, and how does it provide file storage?
 31. Explain the use of Google Cloud Dataprep for data preparation.
@@ -2586,7 +2586,7 @@ Azure Resource Manager (ARM) is a RESTful API and a deployment and management se
 36. What is Google Cloud Armor, and how does it protect web applications?
 37. Explain the concept of Google Cloud Healthcare API for healthcare data management.
 38. How do you use Google Cloud Endpoints for creating, deploying, and managing APIs?
-39. What is Google Cloud IoT Core, and how does it enable IoT device management?
+39. Google Cloud IoT Core was retired in August 2023 - what are the options for IoT device management on GCP today?
 40. Describe the benefits of Google Cloud Firestore for NoSQL document databases.
 41. How do you achieve data encryption in Google Cloud services?
 42. What is Google Cloud Private Catalog, and how does it help manage and distribute software catalogs?
@@ -2604,8 +2604,8 @@ Azure Resource Manager (ARM) is a RESTful API and a deployment and management se
 54. What is Google Cloud Dataflow, and how does it enable real-time and batch data processing?
 55. Explain the concept of Google Cloud Security Scanner for web application security.
 56. How do you secure Google Cloud Endpoints for API protection?
-57. What is Google Cloud IoT Edge, and how does it extend cloud capabilities to edge devices?
-58. Describe the use of Google Cloud AI Platform for machine learning model development.
+57. Google Cloud IoT Edge was retired alongside IoT Core in August 2023 - how would you extend cloud capabilities to edge devices on GCP today?
+58. Describe the use of Vertex AI (formerly AI Platform) for machine learning model development.
 59. How do you monitor and manage resources using Google Cloud Monitoring and Logging?
 60. What is Google Cloud Tasks, and how does it facilitate the handling of asynchronous tasks?
 61. Explain the role of Google Cloud Spanner in managing globally distributed databases.
@@ -2614,7 +2614,7 @@ Azure Resource Manager (ARM) is a RESTful API and a deployment and management se
 64. Describe the benefits of Google Cloud Text-to-Speech for converting text into natural-sounding speech.
 65. How does Google Cloud Ingestion support data transfer and integration?
 66. What is Google Cloud Speech-to-Text, and how does it convert spoken language into text?
-67. Explain the use of Google Cloud Data Studio for data visualization and reporting.
+67. Explain the use of Looker Studio (formerly Google Data Studio) for data visualization and reporting.
 68. How do you ensure data privacy and compliance in GCP?
 69. What is Google Cloud Load Balancing, and how does it distribute traffic across instances?
 70. Describe the role of Google Cloud SQL for PostgreSQL for managed relational databases.
